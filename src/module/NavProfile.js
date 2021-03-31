@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./NavProfile.css";
 
-function NavProfile({ isAuthenticated = true, redirect_field_value }) {
+function NavProfile({ isAuthenticated = false, redirect_field_value }) {
   return (
     <ul class="nav__profile">
       {isAuthenticated ? (

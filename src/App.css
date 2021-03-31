@@ -12,11 +12,12 @@ html,
 body,
 #root,
 .App {
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .App {
   position: relative;
+  overflow-y: scroll;
 }
 
 nav {

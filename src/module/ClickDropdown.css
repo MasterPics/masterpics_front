@@ -1,0 +1,10 @@
+.sort {
+  margin-right: 10px;
+}
+
+.sort select {
+  border: 0;
+  padding: 5px;
+  border: solid 1px black;
+  border-radius: 3px;
+}
