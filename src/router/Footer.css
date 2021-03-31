@@ -1,0 +1,40 @@
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgb(54, 54, 54);
+  padding: 15px 30px;
+  font-size: 13px;
+  margin-top: 20px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+footer li,
+footer a {
+  color: rgb(0, 0, 0);
+}
+
+.footer__logo {
+  font-size: 15px;
+  padding-bottom: 8px;
+}
+
+.footer__right {
+  display: flex;
+  cursor: pointer;
+}
+
+.footer__right li {
+  padding: 8px 10px;
+}
+
+.footer__right i {
+  font-size: 30px;
+}
+
+.footer__right li:hover,
+.footer__right a:hover {
+  color: purple;
+}
