@@ -123,14 +123,37 @@ a {
 } */
 
 .grid {
-  column-width: 360px;
-  column-gap: 10px;
   text-align: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 380px) {
+  .grid {
+    width: 380px;
+  }
+}
+
+@media (min-width: 760px) {
+  .grid {
+    width: 760px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .grid {
+    width: 1140px;
+  }
+}
+
+@media (min-width: 1520px) {
+  .grid {
+    width: 1520px;
+  }
 }
 
 .grid-item {
   width: 340px;
-  margin: 20px 0;
+  margin: 20px;
   transition: 0.3s;
 }
 

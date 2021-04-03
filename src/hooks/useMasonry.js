@@ -5,7 +5,8 @@ let modifying = false;
 const modifyLayout = (refMasonry) => {
   if (!modifying) {
     modifying = true;
-    console.log(refMasonry.current.style)
+    console.dir(refMasonry);
+    console.log(refMasonry.current.clientWidth);
     const childNodes = refMasonry.current.childNodes;
     const boxWidth = refMasonry.current.style.width;
     console.log(childNodes, boxWidth);

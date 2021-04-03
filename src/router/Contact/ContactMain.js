@@ -5,7 +5,8 @@ import LabelCheckbox from "../../module/LabelCheckbox";
 import ListItem from "../../module/ListItem";
 import useMasonry from "../../hooks/useMasonry";
 import "./ContactMain.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Masonry from "masonry-layout";
 
 const listItemData = [
   {
@@ -223,7 +224,14 @@ function ContactMain() {
     return <ListItem {...data} key={index} />;
   });
   const [listItems, setListItems] = useState(JSXListItemData);
-  const { refMasonry } = useMasonry(listItems);
+  // const { refMasonry } = useMasonry(listItems);
+  useEffect(() => {
+    let masonry = new Masonry(".grid", {
+      percentPosition: true,
+      itemSelector: ".grid-item",
+      columnWidth: 380,
+    });
+  }, []);
 
   return (
     <div className="contactlist">
@@ -244,10 +252,14 @@ function ContactMain() {
       </div>
 
       {/* <!--contact_list--> */}
-      <div className="grid" ref={refMasonry}>
-        {listItems}
-      </div>
-      <button onClick={()=>{setListItems(0)}}>setListItems</button>
+      <div className="grid">{listItems}</div>
+      <button
+        onClick={() => {
+          setListItems(0);
+        }}
+      >
+        setListItems
+      </button>
       <div>
         {/* <!-- 버튼 누르면 상단으로 이동 -->
                 <div onclick="topFunction()" id="myBtn" title="Go to top"><i className="fas fa-arrow-circle-up"></i></div>
