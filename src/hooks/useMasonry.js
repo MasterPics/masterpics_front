@@ -5,7 +5,10 @@ let modifying = false;
 const modifyLayout = (refMasonry) => {
   if (!modifying) {
     modifying = true;
-    console.log(refMasonry.current.childNodes);
+    console.log(refMasonry.current.style)
+    const childNodes = refMasonry.current.childNodes;
+    const boxWidth = refMasonry.current.style.width;
+    console.log(childNodes, boxWidth);
     modifying = false;
   }
 };
