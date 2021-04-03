@@ -7,14 +7,14 @@ import "./Navigation.css";
 function Navigation() {
   return (
     <nav id="nav">
-      <div class="nav_left">
+      <div className="nav_left">
         <NavLogo />
         <NavMenu />
       </div>
 
       <NavProfile />
-      <Link to="#" class="nav__toggleBtn">
-        <i class="fas fa-bars"></i>
+      <Link to="#" className="nav__toggleBtn">
+        <i className="fas fa-bars"></i>
       </Link>
     </nav>
   );

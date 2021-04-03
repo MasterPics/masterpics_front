@@ -7,9 +7,9 @@ class ClickDropdown extends React.Component {
   };
   render() {
     return (
-      <div class="sort">
-        <select name="" id="" class="form-control sort ">
-          <option value="recent" selected>
+      <div className="sort">
+        <select name="" id="" className="form-control sort ">
+          <option value="recent" defaultValue>
             최신순
           </option>
           <option value="save">저장순</option>

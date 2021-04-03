@@ -2,11 +2,11 @@ import "./SearchForm.css";
 
 function SearchForm(props) {
   return (
-    <div class="input-group">
-      <input type="text" class="form-control search" value="" />
-      <div class="input-group-append">
+    <div className="input-group">
+      <input type="text" className="form-control search" value="" />
+      <div className="input-group-append">
         <button
-          class="btn btn-outline-secondary btn_search"
+          className="btn btn-outline-secondary btn_search"
           type="button"
           id=""
         >

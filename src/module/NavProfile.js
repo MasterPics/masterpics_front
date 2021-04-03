@@ -3,7 +3,7 @@ import "./NavProfile.css";
 
 function NavProfile({ isAuthenticated = false, redirect_field_value }) {
   return (
-    <ul class="nav__profile">
+    <ul className="nav__profile">
       {isAuthenticated ? (
         <>
           <li>
@@ -11,16 +11,16 @@ function NavProfile({ isAuthenticated = false, redirect_field_value }) {
           </li>
           <form method="post" action="/">
             <input
-              class="here"
+              className="here"
               type="submit"
               value="Log Out"
-              onclick="return confirm('Are you sure?');"
+              onClick="return confirm('Are you sure?');"
             ></input>
           </form>
 
           <li>
             <Link to="/profile_detail">
-              My profile&nbsp;<i class="far fa-user-circle"></i>
+              My profile&nbsp;<i className="far fa-user-circle"></i>
             </Link>
           </li>
         </>
@@ -31,7 +31,7 @@ function NavProfile({ isAuthenticated = false, redirect_field_value }) {
           </li>
           <li>
             <Link to="/">
-              My profile&nbsp;<i class="far fa-user-circle"></i>
+              My profile&nbsp;<i className="far fa-user-circle"></i>
             </Link>
           </li>
         </>

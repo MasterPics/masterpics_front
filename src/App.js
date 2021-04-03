@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
 import Navigation from "./router/Navigation";
 import Footer from "./router/Footer";
@@ -7,11 +7,11 @@ import ContactMain from "./router/Contact/ContactMain";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Route path="/">
           <Navigation />
         </Route>
-        <Route path="/contact">
+        <Route path="/contact" exact>
           <ContactMain />
         </Route>
         <Route path="/">
