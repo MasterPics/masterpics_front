@@ -247,6 +247,7 @@ function ContactMain() {
       <div className="grid" ref={refMasonry}>
         {listItems}
       </div>
+      <button onClick={setListItems(0)}>setListItems</button>
       <div>
         {/* <!-- 버튼 누르면 상단으로 이동 -->
                 <div onclick="topFunction()" id="myBtn" title="Go to top"><i className="fas fa-arrow-circle-up"></i></div>

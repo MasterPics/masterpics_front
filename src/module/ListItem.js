@@ -79,6 +79,8 @@ function ListItem({ userProfile, itemContent }) {
                 })}
               </div>
             );
+          }else{
+            return <></>;
           }
         })}
       </div>
