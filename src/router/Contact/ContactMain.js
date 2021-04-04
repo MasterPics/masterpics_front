@@ -3,10 +3,10 @@ import SearchForm from "../../module/SearchForm";
 import ClickDropdown from "../../module/ClickDropdown";
 import LabelCheckbox from "../../module/LabelCheckbox";
 import ListItem from "../../module/ListItem";
-import useMasonry from "../../hooks/useMasonry";
 import "./ContactMain.css";
 import React, { useEffect, useState } from "react";
 import Masonry from "masonry-layout";
+import useMasonry from "../../hooks/useMasonry";
 
 const listItemData = [
   {
@@ -39,7 +39,7 @@ const listItemData = [
     userProfile: {
       id: 1,
       image: false,
-      name: "Nagi",
+      name: "Guckkasten",
       category: "otheruse",
     },
     itemContent: {
@@ -49,7 +49,7 @@ const listItemData = [
         {
           type: "image",
           content:
-            "https://images.unsplash.com/photo-1540206395-68808572332f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=562&q=80",
+            "https://images.unsplash.com/photo-1605992052511-03d7c6cb9c23?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=450&q=80",
         },
         {
           type: "splitText",
@@ -65,17 +65,17 @@ const listItemData = [
     userProfile: {
       id: 1,
       image: false,
-      name: "Nagi",
+      name: "Seo Taiji",
       category: "otheruse",
     },
     itemContent: {
       id: 1,
-      title: "Issue",
+      title: "Haffy End",
       sections: [
         {
           type: "image",
           content:
-            "https://images.unsplash.com/photo-1470770903676-69b98201ea1c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+            "https://images.unsplash.com/photo-1499087666200-e07e9c631266?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
         },
         {
           type: "splitText",
@@ -91,17 +91,17 @@ const listItemData = [
     userProfile: {
       id: 1,
       image: false,
-      name: "Nagi",
+      name: "My Chemical Romance",
       category: "otheruse",
     },
     itemContent: {
       id: 1,
-      title: "Issue",
+      title: "Welcome to the Black Parade",
       sections: [
         {
           type: "image",
           content:
-            "https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+            "https://images.unsplash.com/photo-1499678450342-29ebee16d1ab?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
         },
         {
           type: "splitText",
@@ -117,17 +117,17 @@ const listItemData = [
     userProfile: {
       id: 1,
       image: false,
-      name: "Nagi",
+      name: "Green Day",
       category: "otheruse",
     },
     itemContent: {
       id: 1,
-      title: "Issue",
+      title: "21 Guns",
       sections: [
         {
           type: "image",
           content:
-            "https://images.unsplash.com/photo-1455218873509-8097305ee378?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+            "https://images.unsplash.com/photo-1606322504161-7b7760c59421?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1549&q=80",
         },
         {
           type: "splitText",
@@ -143,17 +143,17 @@ const listItemData = [
     userProfile: {
       id: 1,
       image: false,
-      name: "Nagi",
+      name: "My Chemical Romance",
       category: "otheruse",
     },
     itemContent: {
       id: 1,
-      title: "Issue",
+      title: "Helena",
       sections: [
         {
           type: "image",
           content:
-            "https://images.unsplash.com/photo-1608094510970-d3eed1918d77?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+            "https://images.unsplash.com/photo-1547997256-cdbe00ada4f6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80",
         },
         {
           type: "splitText",
@@ -169,12 +169,12 @@ const listItemData = [
     userProfile: {
       id: 1,
       image: false,
-      name: "Nagi",
+      name: "N.EX.T",
       category: "otheruse",
     },
     itemContent: {
       id: 1,
-      title: "Issue",
+      title: "해에게서 소년에게",
       sections: [
         {
           type: "image",
@@ -195,12 +195,12 @@ const listItemData = [
     userProfile: {
       id: 1,
       image: false,
-      name: "Nagi",
+      name: "KoЯn",
       category: "otheruse",
     },
     itemContent: {
       id: 1,
-      title: "Issue",
+      title: "Freak On a Leash",
       sections: [
         {
           type: "image",
@@ -217,26 +217,102 @@ const listItemData = [
       bookmarked: false,
     },
   },
+  {
+    userProfile: {
+      id: 1,
+      image: false,
+      name: "자우림",
+      category: "otheruse",
+    },
+    itemContent: {
+      id: 1,
+      title: "있지",
+      sections: [
+        {
+          type: "image",
+          content:
+            "https://images.unsplash.com/photo-1591035903277-22dbaf845677?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80",
+        },
+        {
+          type: "splitText",
+          content: ["Pay: 20000원", "2021-03-31\n/2021-04-01"],
+        },
+      ],
+      commentCount: 0,
+      bookmarkedCount: 0,
+      bookmarked: false,
+    },
+  },
+  {
+    userProfile: {
+      id: 1,
+      image: false,
+      name: "브로큰 발렌타인",
+      category: "otheruse",
+    },
+    itemContent: {
+      id: 1,
+      title: "알루미늄",
+      sections: [
+        {
+          type: "image",
+          content:
+            "https://images.unsplash.com/photo-1594255897691-9d1edad1ecfc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80",
+        },
+        {
+          type: "splitText",
+          content: ["Pay: 20000원", "2021-03-31\n/2021-04-01"],
+        },
+      ],
+      commentCount: 0,
+      bookmarkedCount: 0,
+      bookmarked: false,
+    },
+  },
+  {
+    userProfile: {
+      id: 1,
+      image: false,
+      name: "Queen",
+      category: "otheruse",
+    },
+    itemContent: {
+      id: 1,
+      title: "Somebody to love",
+      sections: [
+        {
+          type: "image",
+          content:
+            "https://images.unsplash.com/photo-1545828751-0a3b3a1da949?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=720&q=80",
+        },
+        {
+          type: "splitText",
+          content: ["Pay: 20000원", "2021-03-31\n/2021-04-01"],
+        },
+      ],
+      commentCount: 0,
+      bookmarkedCount: 0,
+      bookmarked: false,
+    },
+  },
 ];
 
 function ContactMain() {
-  const JSXListItemData = listItemData.map((data, index) => {
+  const [listItems, setListItems] = useState(listItemData);
+  const JSXListItemData = listItems.map((data, index) => {
     return (
-      <div className="grid-item">
-        <ListItem {...data} key={index} />
+      <div className="grid-item" key={index}>
+        <ListItem {...data} />
       </div>
     );
   });
-  const [listItems, setListItems] = useState(JSXListItemData);
-  // const { refMasonry } = useMasonry(listItems);
-  useEffect(() => {
-    let masonry = new Masonry(".grid", {
-      fitWidth: true,
-      columnWidth: 360,
-      itemSelector: ".grid-item",
-    });
-    // masonry.reloadItems();
-  }, []);
+
+  const { refMasonry } = useMasonry(listItems, {
+    fitWidth: true,
+    columnWidth: 360,
+    itemSelector: ".grid-item",
+    initLayout: false,
+  });
 
   return (
     <div className="contactlist">
@@ -257,10 +333,12 @@ function ContactMain() {
       </div>
 
       {/* <!--contact_list--> */}
-      <div className="grid">{listItems}</div>
+      <div className="" ref={refMasonry}>
+        {JSXListItemData}
+      </div>
       <button
         onClick={() => {
-          setListItems(0);
+          setListItems(listItems.concat(listItemData));
         }}
       >
         setListItems
@@ -268,9 +346,7 @@ function ContactMain() {
       <div>
         {/* <!-- 버튼 누르면 상단으로 이동 -->
                 <div onclick="topFunction()" id="myBtn" title="Go to top"><i className="fas fa-arrow-circle-up"></i></div>
-                
-                
-                
+
                 <!-- infinite scroll -->
                 {% if contacts.has_next %}
                 <a className="infinite-more-link" href="?page={{ contacts.next_page_number }}">
@@ -278,7 +354,7 @@ function ContactMain() {
                 </a>
                 {% endif %}
                 </div>
-                
+
                 <!--category, sort, search, 상호무페이 filter form-->
                 <div style="height: 0;">
                 <form id="searchForm" method="get" action="{% url 'contact:contact_list' %}">

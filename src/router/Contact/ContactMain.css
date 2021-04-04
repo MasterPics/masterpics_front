@@ -117,15 +117,11 @@ a {
   color: rgb(54, 30, 30);
 }
 
-/* .grid {
-  column-width: 340px;
-  column-gap: 30px;
-} */
-
-.grid {
+.useMasonryRef {
   text-align: center;
   margin: 0 auto;
   transition: 0.3s width;
+  min-height: max-content;
 }
 
 .grid-item > .item_container {
