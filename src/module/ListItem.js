@@ -3,7 +3,7 @@ import "./ListItem.css";
 
 function ListItem({ userProfile, itemContent }) {
   return (
-    <div className="grid-item">
+    <div className="item_container">
       <div className="item_top contact-{{contact.pk}}">
         {/* <!-- 게시글 작성자 정보 --> */}
         <div>

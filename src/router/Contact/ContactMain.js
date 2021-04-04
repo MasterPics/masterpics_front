@@ -221,16 +221,21 @@ const listItemData = [
 
 function ContactMain() {
   const JSXListItemData = listItemData.map((data, index) => {
-    return <ListItem {...data} key={index} />;
+    return (
+      <div className="grid-item">
+        <ListItem {...data} key={index} />
+      </div>
+    );
   });
   const [listItems, setListItems] = useState(JSXListItemData);
   // const { refMasonry } = useMasonry(listItems);
   useEffect(() => {
     let masonry = new Masonry(".grid", {
       percentPosition: true,
+      columnWidth: ".grid-sizer",
       itemSelector: ".grid-item",
-      columnWidth: 380,
     });
+    masonry.reloadItems();
   }, []);
 
   return (
@@ -252,7 +257,10 @@ function ContactMain() {
       </div>
 
       {/* <!--contact_list--> */}
-      <div className="grid">{listItems}</div>
+      <div className="grid">
+        <div class="grid-sizer"></div>
+        {listItems}
+      </div>
       <button
         onClick={() => {
           setListItems(0);
