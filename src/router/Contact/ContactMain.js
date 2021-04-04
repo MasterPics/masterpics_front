@@ -231,11 +231,11 @@ function ContactMain() {
   // const { refMasonry } = useMasonry(listItems);
   useEffect(() => {
     let masonry = new Masonry(".grid", {
-      percentPosition: true,
-      columnWidth: ".grid-sizer",
+      fitWidth: true,
+      columnWidth: 360,
       itemSelector: ".grid-item",
     });
-    masonry.reloadItems();
+    // masonry.reloadItems();
   }, []);
 
   return (
@@ -257,10 +257,7 @@ function ContactMain() {
       </div>
 
       {/* <!--contact_list--> */}
-      <div className="grid">
-        <div class="grid-sizer"></div>
-        {listItems}
-      </div>
+      <div className="grid">{listItems}</div>
       <button
         onClick={() => {
           setListItems(0);
