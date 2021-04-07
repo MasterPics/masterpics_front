@@ -1,17 +1,17 @@
 import { useEffect, useRef } from "react";
 import Masonry from "masonry-layout";
 
-let modifying = false;
+// let modifying = false;
 
-const modifyLayout = (refMasonry) => {
-  if (!modifying) {
-    modifying = true;
-    console.dir(refMasonry);
-    const childNodes = refMasonry.current.childNodes;
-    const boxWidth = refMasonry.current.style.width;
-    modifying = false;
-  }
-};
+// const modifyLayout = (refMasonry) => {
+//   if (!modifying) {
+//     modifying = true;
+//     console.dir(refMasonry);
+//     const childNodes = refMasonry.current.childNodes;
+//     const boxWidth = refMasonry.current.style.width;
+//     modifying = false;
+//   }
+// };
 
 function useMasonry(listItems, options) {
   const refMasonry = useRef(); // ref for masonry container

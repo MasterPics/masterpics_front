@@ -60,7 +60,7 @@
   text-align: right;
 }
 
-.item_bottom {
+.foot_information {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -68,6 +68,15 @@
   padding: 15px;
 }
 
-.item_bottom > div {
-  cursor: pointer;
+.foot_information__left,
+.foot_information__right {
+  display: flex;
+}
+
+.foot_information__left > div {
+  margin-right: 10px;
+}
+
+.foot_information__right > div {
+  margin-left: 10px;
 }

@@ -1,7 +1,16 @@
 import { Link } from "react-router-dom";
 import "./ListItem.css";
 
-function ListItem({ userProfile, itemContent }) {
+function ListItem({ userProfile, itemContent, foot_information }) {
+  const {
+    commentCount,
+    bookmarkedCount,
+    bookmarked,
+    viewCount,
+    likeCount,
+    liked,
+  } = foot_information ? foot_information : {};
+
   return (
     <div className="item_container">
       <div className="item_top contact-{{contact.pk}}">
@@ -85,32 +94,74 @@ function ListItem({ userProfile, itemContent }) {
         })}
       </div>
 
-      {/* <!-- comment, save --> */}
-      <div className="item_bottom">
-        <div className="comment">
-          <Link to={`detail/${itemContent.id}/`}>
-            <i className="far fa-comment-dots"></i>
-            <span className="comment__content">{itemContent.commentCount}</span>
-          </Link>
+      {/* <!-- foot_information --> */}
+      <div className="foot_information">
+        <div className="foot_information__left">
+          {commentCount !== undefined ? (
+            <div className="comment">
+              <Link to={`detail/${itemContent.id}/`}>
+                <i className="far fa-comment-dots"></i>
+                <span className="comment__content">{commentCount}</span>
+              </Link>
+            </div>
+          ) : (
+            <></>
+          )}
+
+          {likeCount !== undefined ? (
+            <div class="like">
+              {liked ? (
+                <i
+                  class="fas fa-heart"
+                  type="submit"
+                  onClick="onClickLike({{ portfolio.id }})"
+                  name="type"
+                  value="like"
+                ></i>
+              ) : (
+                <i
+                  class="far fa-heart"
+                  type="submit"
+                  onClick="onClickLike({{ portfolio.id }})"
+                  name="type"
+                  value="like"
+                ></i>
+              )}
+              <span class="like__content">{likeCount}</span>
+            </div>
+          ) : (
+            <></>
+          )}
         </div>
 
-        <div className="save save-{{contact.id}}">
-          {itemContent.bookmarked ? (
-            <i
-              className="fas fa-bookmark"
-              type="submit"
-              name="type"
-              value="save"
-            ></i>
+        <div className="foot_information__right">
+          {viewCount !== undefined ? (
+            <div class="eye">
+              <i class="far fa-eye"></i>
+              <span class="view__content">{viewCount}</span>
+            </div>
           ) : (
-            <i
-              className="far fa-bookmark"
-              type="submit"
-              name="type"
-              value="save"
-            ></i>
+            <></>
           )}
-          <span className="save__content">{itemContent.bookmarkedCount}</span>
+
+          <div className="save save-{{contact.id}}">
+            {bookmarked ? (
+              <i
+                className="fas fa-bookmark"
+                type="submit"
+                name="type"
+                value="save"
+              ></i>
+            ) : (
+              <i
+                className="far fa-bookmark"
+                type="submit"
+                name="type"
+                value="save"
+              ></i>
+            )}
+            <span className="save__content">{bookmarkedCount}</span>
+          </div>
         </div>
       </div>
     </div>

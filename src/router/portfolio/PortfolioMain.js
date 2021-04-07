@@ -1,11 +1,10 @@
+import "./PortfolioMain.css";
 import HoverDropdown from "../../module/HoverDropdown";
 import SearchForm from "../../module/SearchForm";
 import ClickDropdown from "../../module/ClickDropdown";
-import LabelCheckbox from "../../module/LabelCheckbox";
 import ListItem from "../../module/ListItem";
-import "./ContactMain.css";
-import React, { useEffect, useState } from "react";
-import Masonry from "masonry-layout";
+import PlusButton from "../../module/PlusButton";
+import React, { useState } from "react";
 import useMasonry from "../../hooks/useMasonry";
 
 const listItemData = [
@@ -30,9 +29,13 @@ const listItemData = [
           content: ["Pay: 50000원", "2021-03-31\n/2021-04-01"],
         },
       ],
-      commentCount: 0,
+    },
+    foot_information: {
       bookmarkedCount: 0,
       bookmarked: false,
+      viewCount: 5,
+      liked: true,
+      likeCount: 10,
     },
   },
   {
@@ -56,9 +59,13 @@ const listItemData = [
           content: ["Pay: 20000원", "2021-03-31\n/2021-04-01"],
         },
       ],
-      commentCount: 0,
+    },
+    foot_information: {
       bookmarkedCount: 0,
       bookmarked: false,
+      liked: false,
+      likeCount: 0,
+      viewCount: 0,
     },
   },
   {
@@ -82,9 +89,13 @@ const listItemData = [
           content: ["Pay: 20000원", "2021-03-31\n/2021-04-01"],
         },
       ],
-      commentCount: 0,
-      bookmarkedCount: 0,
+    },
+    foot_information: {
+      bookmarkedCount: 2,
       bookmarked: false,
+      liked: false,
+      likeCount: 0,
+      viewCount: 23,
     },
   },
   {
@@ -108,9 +119,13 @@ const listItemData = [
           content: ["Pay: 20000원", "2021-03-31\n/2021-04-01"],
         },
       ],
-      commentCount: 0,
-      bookmarkedCount: 0,
+    },
+    foot_information: {
+      bookmarkedCount: 1,
       bookmarked: false,
+      liked: false,
+      likeCount: 10,
+      viewCount: 100,
     },
   },
   {
@@ -134,9 +149,13 @@ const listItemData = [
           content: ["Pay: 20000원", "2021-03-31\n/2021-04-01"],
         },
       ],
-      commentCount: 0,
+    },
+    foot_information: {
       bookmarkedCount: 0,
       bookmarked: false,
+      liked: false,
+      likeCount: 410,
+      viewCount: 1020,
     },
   },
   {
@@ -160,9 +179,13 @@ const listItemData = [
           content: ["Pay: 20000원", "2021-03-31\n/2021-04-01"],
         },
       ],
-      commentCount: 0,
-      bookmarkedCount: 0,
-      bookmarked: false,
+    },
+    foot_information: {
+      bookmarkedCount: 23,
+      bookmarked: true,
+      liked: false,
+      likeCount: 1,
+      viewCount: 1,
     },
   },
   {
@@ -186,9 +209,13 @@ const listItemData = [
           content: ["Pay: 20000원", "2021-03-31\n/2021-04-01"],
         },
       ],
-      commentCount: 0,
-      bookmarkedCount: 0,
-      bookmarked: false,
+    },
+    foot_information: {
+      bookmarkedCount: 21,
+      bookmarked: true,
+      liked: false,
+      likeCount: 10,
+      viewCount: 100,
     },
   },
   {
@@ -212,9 +239,13 @@ const listItemData = [
           content: ["Pay: 20000원", "2021-03-31\n/2021-04-01"],
         },
       ],
-      commentCount: 0,
-      bookmarkedCount: 0,
+    },
+    foot_information: {
+      bookmarkedCount: 1,
       bookmarked: false,
+      liked: false,
+      likeCount: 10,
+      viewCount: 100,
     },
   },
   {
@@ -238,9 +269,13 @@ const listItemData = [
           content: ["Pay: 20000원", "2021-03-31\n/2021-04-01"],
         },
       ],
-      commentCount: 0,
-      bookmarkedCount: 0,
+    },
+    foot_information: {
+      bookmarkedCount: 1,
       bookmarked: false,
+      liked: false,
+      likeCount: 10,
+      viewCount: 100,
     },
   },
   {
@@ -264,9 +299,13 @@ const listItemData = [
           content: ["Pay: 20000원", "2021-03-31\n/2021-04-01"],
         },
       ],
-      commentCount: 0,
-      bookmarkedCount: 0,
+    },
+    foot_information: {
+      bookmarkedCount: 10,
       bookmarked: false,
+      liked: false,
+      likeCount: 10,
+      viewCount: 100,
     },
   },
   {
@@ -290,14 +329,18 @@ const listItemData = [
           content: ["Pay: 20000원", "2021-03-31\n/2021-04-01"],
         },
       ],
-      commentCount: 0,
-      bookmarkedCount: 0,
-      bookmarked: false,
+    },
+    foot_information: {
+      bookmarkedCount: 2,
+      bookmarked: true,
+      liked: false,
+      likeCount: 10,
+      viewCount: 100,
     },
   },
 ];
 
-function ContactMain() {
+function PortfolioMain() {
   const [listItems, setListItems] = useState(listItemData);
   const JSXListItemData = listItems.map((data, index) => {
     return (
@@ -323,12 +366,7 @@ function ContactMain() {
         <div className="bar_right">
           <SearchForm />
           <ClickDropdown />
-          <LabelCheckbox />
-          <div className="contact_create">
-            <a className="create_btn" href="{% url 'contact:contact_create' %}">
-              <i className="far fa-plus-square"></i>
-            </a>
-          </div>
+          <PlusButton />
         </div>
       </div>
 
@@ -369,4 +407,4 @@ function ContactMain() {
   );
 }
 
-export default ContactMain;
+export default PortfolioMain;
