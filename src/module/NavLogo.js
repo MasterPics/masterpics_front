@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./NavLogo.css";
+import "../css/module/NavLogo.css";
 
 function NavLogo() {
   return (

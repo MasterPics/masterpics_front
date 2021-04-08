@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Noto+Sans+KR:wght@500&display=swap");
+.Main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Main .hello {
+  position: relative;
+  width: 100%;
+  height: 150vh;
+}
+.Main .hello .text_space {
+  position: relative;
+  z-index: 1;
+  margin-top: -20%;
+  padding-top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 550px;
+  height: 80vh;
+}
+.Main .hello .text_space h1 {
+  font-size: 96px;
+  font-family: "Lora", serif;
+  line-height: 122.88px;
+}
+.Main .hello .text_space h4 {
+  font-size: 18px;
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: center;
+  line-height: 24.52px;
+}
+.Main .hello .background_space {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+.Main .hello .background_space #top_right_grayBox {
+  min-width: 400px;
+  width: 35%;
+  height: 700px;
+  right: 5%;
+  top: 10%;
+}
+.Main .hello .background_space #bottom_left_grayBox_bar {
+  position: absolute;
+  width: 5px;
+  height: 300px;
+  bottom: -10%;
+  right: -10%;
+}
+.Main .hello .background_space #bottom_left_grayBox {
+  min-width: 400px;
+  width: 25%;
+  height: 500px;
+  bottom: 10%;
+  left: 5%;
+}
+.Main .grid {
+  margin: 50px;
+}
+.Main .grid .grid-item {
+  width: 360px;
+  height: 220px;
+  margin: 10px;
+}
+.Main .grayBox {
+  position: absolute;
+  background-color: #c4c4c4;
+  border: #7f7f7f solid 1px;
+}
+
+/*# sourceMappingURL=Main.css.map */

@@ -1,4 +1,4 @@
-import "./PortfolioMain.css";
+import "../../css/router/portfolio/PortfolioMain.css";
 import HoverDropdown from "../../module/HoverDropdown";
 import SearchForm from "../../module/SearchForm";
 import ClickDropdown from "../../module/ClickDropdown";

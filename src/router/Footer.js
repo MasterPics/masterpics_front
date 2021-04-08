@@ -1,4 +1,4 @@
-import "./Footer.css";
+import "../css/router/Footer.css";
 
 function Footer(props) {
   return (

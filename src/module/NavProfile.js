@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./NavProfile.css";
+import "../css/module/NavProfile.css";
 
 function NavProfile({ isAuthenticated = false, redirect_field_value }) {
   return (

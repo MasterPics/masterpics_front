@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import NavLogo from "../module/NavLogo";
 import NavMenu from "../module/NavMenu";
 import NavProfile from "../module/NavProfile";
-import "./Navigation.css";
+import "../css/router/GNB.css";
 
-function Navigation() {
+function GNB() {
   return (
-    <nav id="nav">
+    <nav className="GNB" id="GNB">
       <div className="nav_left">
         <NavLogo />
         <NavMenu />
@@ -20,4 +20,4 @@ function Navigation() {
   );
 }
 
-export default Navigation;
+export default GNB;

@@ -1,4 +1,4 @@
-import "./SearchForm.css";
+import "../css/module/SearchForm.css";
 
 function SearchForm(props) {
   return (
