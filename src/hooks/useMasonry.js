@@ -26,7 +26,7 @@ function useMasonry(listItems, options) {
     refMasonry.current.classList.add("useMasonryRef");
     let masonry = new Masonry(".useMasonryRef", options);
     masonry.layout();
-  }, [listItems]);
+  }, [listItems, options]);
 
   // Modify items layout
   // useEffect(() => {

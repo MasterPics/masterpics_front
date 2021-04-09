@@ -8,7 +8,7 @@ function Main() {
   useEffect(() => {
     let list = [];
     for (let i = 0; i < 9; i++) {
-      list.push(<div className="grayBox grid-item"></div>);
+      list.push(<div className="grayBox grid-item" key={i}></div>);
     }
     setListItems(list);
   }, []);
@@ -32,8 +32,8 @@ function Main() {
           </h4>
         </div>
         <div className="background_space">
-          <div className="grayBox" id="top_right_grayBox"></div>
-          <div className="grayBox" id="bottom_left_grayBox">
+          <div className="grayBox" id="top_right_grayBox" key={1}></div>
+          <div className="grayBox" id="bottom_left_grayBox" key={2}>
             <div className="grayBox" id="bottom_left_grayBox_bar"></div>
           </div>
         </div>
