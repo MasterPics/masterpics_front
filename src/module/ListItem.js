@@ -109,25 +109,23 @@ function ListItem({ userProfile, itemContent, foot_information }) {
           )}
 
           {likeCount !== undefined ? (
-            <div class="like">
+            <div className="like">
               {liked ? (
                 <i
-                  class="fas fa-heart"
+                  className="fas fa-heart"
                   type="submit"
-                  onClick="onClickLike({{ portfolio.id }})"
                   name="type"
                   value="like"
                 ></i>
               ) : (
                 <i
-                  class="far fa-heart"
+                  className="far fa-heart"
                   type="submit"
-                  onClick="onClickLike({{ portfolio.id }})"
                   name="type"
                   value="like"
                 ></i>
               )}
-              <span class="like__content">{likeCount}</span>
+              <span className="like__content">{likeCount}</span>
             </div>
           ) : (
             <></>
@@ -136,9 +134,9 @@ function ListItem({ userProfile, itemContent, foot_information }) {
 
         <div className="foot_information__right">
           {viewCount !== undefined ? (
-            <div class="eye">
-              <i class="far fa-eye"></i>
-              <span class="view__content">{viewCount}</span>
+            <div className="eye">
+              <i className="far fa-eye"></i>
+              <span className="view__content">{viewCount}</span>
             </div>
           ) : (
             <></>

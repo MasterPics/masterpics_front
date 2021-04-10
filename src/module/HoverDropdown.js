@@ -1,21 +1,28 @@
+import { Link } from "react-router-dom";
 import "../css/module/HoverDropdown.css";
 
-function HoverDropdown(props) {
+function HoverDropdown({ name, items }) {
   return (
     <div className="HoverDropdown">
       <div className="dropbtn">
         <div className="btn">
           <span className="noselect">
-            <a href="/">Category</a>
+            <a href="/">{name}</a>
           </span>
         </div>
       </div>
       <div className="dropdown-content">
-        <a href="/">Photographer</a>
-        <a href="/">Model</a>
-        <a href="/">Hair/makeup</a>
-        <a href="/">Stylist</a>
-        <a href="/">Other use</a>
+        {items.map((item, index) => {
+          return (
+            <Link
+              to={item.link ? item.link : "#"}
+              onClick={item.onClick}
+              key={index}
+            >
+              {item.name}
+            </Link>
+          );
+        })}
       </div>
     </div>
   );

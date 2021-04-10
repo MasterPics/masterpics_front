@@ -328,7 +328,6 @@ function ContactMain() {
       </div>
     );
   });
-
   const { refMasonry } = useMasonry(listItems, {
     fitWidth: true,
     columnWidth: 360,
@@ -336,11 +335,49 @@ function ContactMain() {
     initLayout: false,
   });
 
+  const filter = (category) => {
+    console.log(category);
+  };
+
   return (
     <div className="contactlist">
       <div className="bar">
         <div className="bar_left">
-          <HoverDropdown />
+          <HoverDropdown
+            name="Category"
+            items={[
+              {
+                name: "Photographer",
+                onClick: () => {
+                  filter("photographer");
+                },
+              },
+              {
+                name: "Model",
+                onClick: () => {
+                  filter("model");
+                },
+              },
+              {
+                name: "Hair/Makeup",
+                onClick: () => {
+                  filter("HairMakeup");
+                },
+              },
+              {
+                name: "Stylist",
+                onClick: () => {
+                  filter("stylist");
+                },
+              },
+              {
+                name: "Other use",
+                onClick: () => {
+                  filter("otheruse");
+                },
+              },
+            ]}
+          />
         </div>
         <div className="bar_right">
           <SearchForm />
