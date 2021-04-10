@@ -2,7 +2,7 @@ import "../css/module/HoverDropdown.css";
 
 function HoverDropdown(props) {
   return (
-    <div className="dropdown">
+    <div className="HoverDropdown">
       <div className="dropbtn">
         <div className="btn">
           <span className="noselect">

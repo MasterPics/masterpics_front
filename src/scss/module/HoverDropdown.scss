@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+@mixin HoverDropdown_btn($width, $height) {
+  position: absolute;
+  background: #fff;
+  z-index: -1;
+  transition: 1s;
+  content: "";
+  width: $width;
+  height: $height;
+}
+
+.HoverDropdown {
+  /* The container <div> - needed to position the dropdown content */
+  position: relative;
+  display: inline-block;
+
+  .dropbtn {
+    padding: 16px;
+
+    .btn {
+      width: 150px;
+      height: 50px;
+      border: 1px solid #333;
+      font-family: "Nanum Gothic", sans-serif;
+      font-size: 15px;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 0;
+      transition: 1s;
+
+      &::before {
+        @include HoverDropdown_btn(130px, 50px);
+      }
+      &::after {
+        @include HoverDropdown_btn(150px, 30px);
+      }
+      &:hover {
+        background: #fff;
+
+        .noselect {
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+      }
+    }
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content {
+    /* Dropdown Content (Hidden by Default) */
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    margin-left: 11px;
+
+    a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      background-color: white;
+      border: #ddd solid 1px;
+
+      &:hover {
+        /* Change color of dropdown links on hover */
+        background-color: #ddd;
+      }
+    }
+  }
+
+  &:hover {
+    .dropdown-content {
+      /* Show the dropdown menu on hover */
+      display: block;
+    }
+
+    .dropbtn .btn::before {
+      width: 0px;
+      background: #fff;
+    }
+    .dropbtn .btn::after {
+      height: 0px;
+      background: #fff;
+    }
+  }
+}
