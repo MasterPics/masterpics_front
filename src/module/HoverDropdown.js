@@ -11,19 +11,23 @@ function HoverDropdown({ name, items }) {
           </span>
         </div>
       </div>
-      <div className="dropdown-content">
-        {items.map((item, index) => {
-          return (
-            <Link
-              to={item.link ? item.link : "#"}
-              onClick={item.onClick}
-              key={index}
-            >
-              {item.name}
-            </Link>
-          );
-        })}
-      </div>
+      {items ? (
+        <div className="dropdown-content">
+          {items.map((item, index) => {
+            return (
+              <Link
+                to={item.link ? item.link : "#"}
+                onClick={item.onClick}
+                key={index}
+              >
+                {item.name}
+              </Link>
+            );
+          })}
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 }
