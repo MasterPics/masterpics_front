@@ -1,6 +1,6 @@
 import "../css/module/HoverDropdown.css";
 
-function HoverDropdown() {
+function HoverDropdown(props) {
   return (
     <div className="dropdown">
       <div className="dropbtn">

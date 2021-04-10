@@ -30,7 +30,7 @@ function NavProfile({ isAuthenticated = false, redirect_field_value }) {
             <Link to="/">Log In/Sign Up</Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="/profile/">
               My profile&nbsp;<i className="far fa-user-circle"></i>
             </Link>
           </li>
