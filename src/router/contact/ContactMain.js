@@ -340,9 +340,14 @@ function ContactMain() {
   };
 
   return (
-    <div className="contactlist">
+    <div className="ContactMain">
       <div className="bar">
         <div className="bar_left">
+          <ClickDropdown />
+          <SearchForm />
+          <LabelCheckbox />
+        </div>
+        <div className="bar_right">
           <HoverDropdown
             name="Category"
             items={[
@@ -378,11 +383,6 @@ function ContactMain() {
               },
             ]}
           />
-        </div>
-        <div className="bar_right">
-          <SearchForm />
-          <ClickDropdown />
-          <LabelCheckbox />
           <PlusButton />
         </div>
       </div>

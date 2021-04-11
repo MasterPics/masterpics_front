@@ -67,18 +67,24 @@ a {
   color: black;
 }
 
-.contactlist {
+.ContactMain {
   padding: 3%;
 }
 
-.contactlist .bar {
+.ContactMain .bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 3% 4%;
 }
 
-.bar_right {
+.bar .bar_left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ber .bar_right {
   display: flex;
   justify-content: space-between;
   align-items: center;
