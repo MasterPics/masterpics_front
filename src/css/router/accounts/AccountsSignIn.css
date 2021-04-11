@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 .AccountsSignIn {
+  width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 500px;
 }
 .AccountsSignIn > * {
   width: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
@@ -22,6 +23,7 @@
 .AccountsSignIn form > * {
   width: 80%;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }

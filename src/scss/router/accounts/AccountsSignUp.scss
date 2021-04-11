@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import "../Header.scss";
+
+.AccountsSignUp {
+  @include centerFill(500px, column);
+
+  > * {
+    @include centerFill(100%);
+  }
+
+  .logo {
+    font-size: 24px;
+    font-family: "DM Serif Display", serif;
+  }
+
+  form {
+    flex-direction: column;
+    > * {
+      @include centerFill(80%);
+    }
+  }
+}
