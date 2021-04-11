@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+@mixin verticalFill($width) {
+  width: $width;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AccountsSignIn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+
+  > * {
+    @include verticalFill(100%);
+  }
+
+  .logo {
+    font-size: 24px;
+    font-family: "DM Serif Display", serif;
+  }
+
+  form {
+    flex-direction: column;
+    > * {
+      @include verticalFill(80%);
+    }
+  }
+
+  .social_login {
+    flex-direction: column;
+  }
+}

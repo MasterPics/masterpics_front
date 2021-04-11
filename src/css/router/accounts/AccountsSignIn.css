@@ -1,3 +1,32 @@
-
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+.AccountsSignIn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+}
+.AccountsSignIn > * {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.AccountsSignIn .logo {
+  font-size: 24px;
+  font-family: "DM Serif Display", serif;
+}
+.AccountsSignIn form {
+  flex-direction: column;
+}
+.AccountsSignIn form > * {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.AccountsSignIn .social_login {
+  flex-direction: column;
+}
 
 /*# sourceMappingURL=AccountsSignIn.css.map */
