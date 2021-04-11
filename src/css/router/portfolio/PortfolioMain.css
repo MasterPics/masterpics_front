@@ -175,6 +175,12 @@ a {
   margin: 3% 5%;
 }
 
+.bar .bar_left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .bar_right {
   display: flex;
   justify-content: space-between;
