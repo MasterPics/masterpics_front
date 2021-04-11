@@ -1,31 +1,53 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Sans+KR:wght@500&display=swap");
 .AccountsSignUp {
-  width: 500px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .AccountsSignUp > * {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 .AccountsSignUp .logo {
-  font-size: 24px;
+  font-size: 55px;
   font-family: "DM Serif Display", serif;
+  margin-bottom: 50px;
 }
 .AccountsSignUp form {
   flex-direction: column;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .AccountsSignUp form > * {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  justify-content: flex-start;
+}
+.AccountsSignUp form :not(label) {
+  height: 45px;
+  border: #cacaca 1px solid;
+  border-radius: 3px;
+}
+.AccountsSignUp form label {
+  font-size: 15px;
+  margin: 20px 0 10px 0;
+}
+.AccountsSignUp form button {
+  font-size: 16px;
+  height: 50px;
+  margin-top: 45px;
+  font-family: "Noto Sans KR", sans-serif;
+  cursor: pointer;
+  justify-content: center;
+  background-color: #cacaca;
+  color: white;
 }
 
 /*# sourceMappingURL=AccountsSignUp.css.map */

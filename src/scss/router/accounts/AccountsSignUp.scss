@@ -1,22 +1,48 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Sans+KR:wght@500&display=swap");
 @import "../Header.scss";
 
 .AccountsSignUp {
-  @include centerFill(500px, column);
+  @include centerFill(600px, column);
 
   > * {
-    @include centerFill(100%);
+    @include centerFill(80%);
   }
 
   .logo {
-    font-size: 24px;
+    font-size: 55px;
     font-family: "DM Serif Display", serif;
+    margin-bottom: 50px;
   }
 
   form {
     flex-direction: column;
+    font-family: "Noto Sans KR", sans-serif;
+
     > * {
-      @include centerFill(80%);
+      @include centerFill(100%);
+      justify-content: flex-start;
+    }
+
+    :not(label) {
+      height: 45px;
+      border: #cacaca 1px solid;
+      border-radius: 3px;
+    }
+
+    label {
+      font-size: 15px;
+      margin: 20px 0 10px 0;
+    }
+
+    button {
+      font-size: 16px;
+      height: 50px;
+      margin-top: 45px;
+      font-family: "Noto Sans KR", sans-serif;
+      cursor: pointer;
+      justify-content: center;
+      background-color: #cacaca;
+      color: white;
     }
   }
 }
