@@ -1,4 +1,4 @@
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./css/reset.css";
 import "./css/App.css";
 import GNB from "./router/GNB";
@@ -7,6 +7,7 @@ import Main from "./router/Main";
 import ContactMain from "./router/contact/ContactMain";
 import PortfolioMain from "./router/portfolio/PortfolioMain";
 import ProfileLayout from "./router/profile/ProfileLayout";
+import AccountsLayout from "./router/accounts/AccountsLayout";
 
 function App() {
   return (
@@ -15,18 +16,13 @@ function App() {
         <Route path="/">
           <GNB />
         </Route>
-        <Route path="/" exact>
-          <Main />
-        </Route>
-        <Route path="/contact" exact>
-          <ContactMain />
-        </Route>
-        <Route path="/portfolio" exact>
-          <PortfolioMain />
-        </Route>
-        <Route path="/profile" exact>
-          <ProfileLayout />
-        </Route>
+        <Switch>
+          <Route path="/" component={Main} exact />
+          <Route path="/contact" component={ContactMain} />
+          <Route path="/portfolio" component={PortfolioMain} />
+          <Route path="/profile" component={ProfileLayout} />
+          <Route path="/accounts" component={AccountsLayout} />
+        </Switch>
         <Route path="/">
           <Footer />
         </Route>

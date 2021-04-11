@@ -7,7 +7,7 @@ function NavProfile({ isAuthenticated = false, redirect_field_value }) {
       {isAuthenticated ? (
         <>
           <li>
-            <Link to="/chat/">Messages</Link>
+            <Link to="/chat">Messages</Link>
           </li>
           <form method="post" action="/">
             <input
@@ -27,10 +27,10 @@ function NavProfile({ isAuthenticated = false, redirect_field_value }) {
       ) : (
         <>
           <li>
-            <Link to="/">Log In/Sign Up</Link>
+            <Link to="/accounts/signin">Log In/Sign Up</Link>
           </li>
           <li>
-            <Link to="/profile/">
+            <Link to="/profile">
               My profile&nbsp;<i className="far fa-user-circle"></i>
             </Link>
           </li>
