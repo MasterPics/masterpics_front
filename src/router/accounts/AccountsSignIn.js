@@ -18,7 +18,7 @@ function AccountsSignIn() {
           <span>ID기억하기</span>
         </div>
         <div className="right">
-          <Link>아이디/비밀번호 찾기</Link>
+          <Link to="/accounts/forget">아이디/비밀번호 찾기</Link>
           <Link to="/accounts/signup">회원가입</Link>
         </div>
       </div>

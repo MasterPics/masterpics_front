@@ -1,0 +1,28 @@
+.AccountsForget {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: #cacaca 1px solid;
+}
+.AccountsForget form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.AccountsForget form > * {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.AccountsForget form label {
+  align-items: flex-start;
+}
+
+/*# sourceMappingURL=AccountsForget.css.map */
