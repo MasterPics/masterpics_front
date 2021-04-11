@@ -1,5 +1,4 @@
 import "../../css/router/profile/ProfileMain.css";
-import HoverDropdown from "../../module/HoverDropdown";
 
 function ProfileMain({ user }) {
   user = {
