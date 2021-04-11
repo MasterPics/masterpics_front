@@ -1,34 +1,95 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Sans+KR:wght@700&display=swap");
 .AccountsSignIn {
-  width: 500px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .AccountsSignIn > * {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.AccountsSignIn .logo {
-  font-size: 24px;
-  font-family: "DM Serif Display", serif;
-}
-.AccountsSignIn form {
-  flex-direction: column;
-}
-.AccountsSignIn form > * {
   width: 80%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
+.AccountsSignIn .logo {
+  font-size: 55px;
+  font-family: "DM Serif Display", serif;
+  margin-bottom: 50px;
+}
+.AccountsSignIn form {
+  flex-direction: column;
+}
+.AccountsSignIn form > * {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  margin: 5px 0;
+  padding: 5px;
+}
+.AccountsSignIn form button {
+  margin-top: 10px;
+  background-color: #707070;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+.AccountsSignIn .form_more {
+  margin: 20px 0;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.AccountsSignIn .form_more .left input {
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.AccountsSignIn .form_more .left label {
+  font-size: 15px;
+  color: #252525;
+}
+.AccountsSignIn .form_more .right {
+  width: 210px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.AccountsSignIn .form_more .right > * {
+  color: #787878;
+  font-size: 14px;
+}
 .AccountsSignIn .social_login {
   flex-direction: column;
+}
+.AccountsSignIn .social_login h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  margin: 24px 0;
+}
+.AccountsSignIn .social_login .btns_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.AccountsSignIn .social_login .btns_container > * {
+  background-color: white;
+  border: #cacaca 1px solid;
+  padding: 10px 20px;
+  border-radius: 3px;
 }
 
 /*# sourceMappingURL=AccountsSignIn.css.map */

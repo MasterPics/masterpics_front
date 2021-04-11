@@ -14,8 +14,12 @@ function AccountsSignIn() {
 
       <div className="form_more">
         <div className="left">
-          <input type="checkbox" className="if_remember_me" />
-          <span>ID기억하기</span>
+          <input
+            id="if_remember_me"
+            type="checkbox"
+            className="if_remember_me"
+          />
+          <label htmlFor="if_remember_me">ID기억하기</label>
         </div>
         <div className="right">
           <Link to="/accounts/forget">아이디/비밀번호 찾기</Link>
