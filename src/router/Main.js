@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "../css/router/Main.css";
 import useMasonry from "../hooks/useMasonry";
+import LandingBanner from "../module/LandingBanner";
 
 function Main() {
   const [listItems, setListItems] = useState(null);
@@ -21,7 +22,8 @@ function Main() {
   });
   return (
     <div className="Main">
-      <div className="hello">
+      <LandingBanner />
+      {/* <div className="hello">
         <div className="text_space">
           <h1>MasterPics'</h1>
           <h4>
@@ -37,7 +39,7 @@ function Main() {
             <div className="grayBox" id="bottom_left_grayBox_bar"></div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="grid" ref={refMasonry}>
         {listItems}

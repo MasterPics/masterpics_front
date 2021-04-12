@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+KR&family=Sarina&display=swap");
+.LandingBanner {
+  background-color: #0d0d0d;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.LandingBanner .text_container {
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.LandingBanner .text_container > * {
+  color: white;
+  font-family: "DM Serif Display", serif;
+}
+.LandingBanner .text_container .logo {
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+.LandingBanner .text_container h5 {
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 70px;
+}
+.LandingBanner .text_container h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 19px;
+}
+.LandingBanner .background_container {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.LandingBanner .background_container .box-gray {
+  background-color: #595959;
+}
+.LandingBanner .background_container #center-box {
+  width: 250px;
+  height: 450px;
+}
+.LandingBanner .background_container .circle-blue {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #5200ff;
+}
+.LandingBanner .background_container #top-left-circle {
+  transition: 0.8s left 0.1s ease-in-out;
+  width: 300px;
+  height: 300px;
+  top: 20vh;
+  left: 15vw;
+}
+.LandingBanner .background_container .categories {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+}
+.LandingBanner .background_container .categories > div {
+  font-family: "Sarina", cursive;
+  color: white;
+  width: min-content;
+  position: absolute;
+}
+.LandingBanner .background_container .categories .photographer {
+  transform: rotate(-90deg) translateX(-50%);
+  transform-origin: 0%;
+  top: 50%;
+  left: 0;
+  transition: 0.5s;
+}
+.LandingBanner .background_container .categories .photographer:hover {
+  transform: rotate(-90deg) translateX(-50%) scale(1.1);
+}
+.LandingBanner .background_container .categories .stylist {
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.LandingBanner .background_container .categories .stylist:hover {
+  transform: scale(1.1);
+}
+.LandingBanner .background_container .categories .model {
+  bottom: 0;
+  right: 0;
+  transition: 0.5s;
+}
+.LandingBanner .background_container .categories .model:hover {
+  transform: scale(1.1);
+}
+.LandingBanner .background_container .categories .hair-makeup {
+  transform-origin: 100%;
+  transform: rotate(90deg) translateX(50%);
+  top: 50%;
+  right: 0;
+  transition: 0.5s;
+}
+.LandingBanner .background_container .categories .hair-makeup:hover {
+  transform: rotate(90deg) translateX(50%) scale(1.1);
+}
+
+/*# sourceMappingURL=LandingBanner.css.map */
