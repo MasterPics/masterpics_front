@@ -24,13 +24,9 @@
     }
 
     button {
+      @include button(100%, 45px, #707070);
       margin-top: 10px;
-      background-color: #707070;
-      outline: none;
-      border: none;
-      border-radius: 3px;
       color: white;
-      cursor: pointer;
     }
   }
 

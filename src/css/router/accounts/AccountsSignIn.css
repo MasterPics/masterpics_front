@@ -32,13 +32,17 @@
   padding: 5px;
 }
 .AccountsSignIn form button {
-  margin-top: 10px;
+  width: 100%;
+  height: 45px;
   background-color: #707070;
-  outline: none;
-  border: none;
+  border: #00000000 1px solid;
   border-radius: 3px;
-  color: white;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  color: white;
 }
 .AccountsSignIn .form_more {
   margin: 20px 0;

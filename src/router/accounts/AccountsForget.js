@@ -4,7 +4,7 @@ function AccountsForget({ history }) {
   console.log(history);
   return (
     <div className="AccountsForget">
-      <div>
+      <div className="title">
         <h2>비밀번호를 잊어버리셨나요?</h2>
         <h4>
           메일 주소를 입력하면 비밀번호를 재설정할 수 있는 이메일이 전송됩니다.
@@ -25,7 +25,7 @@ function AccountsForget({ history }) {
         </button>
       </form>
 
-      <span>
+      <span className="tip">
         암호를 재설정하는 데 문제가 발생하면 문의하기를 통해 문의주세요.
       </span>
     </div>
