@@ -14,18 +14,18 @@ function ProfileCard({ user }) {
   } = user;
   return (
     <div className="ProfileCard">
-      <div>
+      <div className="img_name_category">
         <img
           src={
             profile_img ||
             "https://cdn.iconscout.com/icon/free/png-512/account-profile-avatar-man-circle-round-user-30452.png"
           }
         />
-        <div>{username}</div>
-        <div>{category}</div>
+        <div className="username">{username}</div>
+        <div className="category">{category}</div>
       </div>
 
-      <div>
+      <div className="user_contact">
         <div>
           <span>E-mail</span>
           <span>{email}</span>
