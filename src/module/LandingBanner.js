@@ -200,6 +200,8 @@ function LandingBanner({ ver }) {
           <canvas id="c"></canvas>
         </div>
       );
+    default:
+      return <></>;
   }
 }
 
