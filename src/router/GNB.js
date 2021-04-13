@@ -8,7 +8,7 @@ function GNB() {
   return (
     <nav className="GNB" id="GNB">
       <div className="nav_left">
-        <Logo />
+        <Logo short={true} />
         <NavMenu />
       </div>
 
