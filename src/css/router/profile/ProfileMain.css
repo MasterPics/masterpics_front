@@ -1,3 +1,17 @@
-
+.ProfileMain {
+  margin: 10px 0 10px 30px;
+  width: 100%;
+}
+.ProfileMain .grid-sizer {
+  width: 210px;
+}
+.ProfileMain .grid-item {
+  width: 190px;
+  height: 225px;
+  margin: 10px;
+}
+.ProfileMain .useMasonryRef {
+  width: 100%;
+}
 
 /*# sourceMappingURL=ProfileMain.css.map */

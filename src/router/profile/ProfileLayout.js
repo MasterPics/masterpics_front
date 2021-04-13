@@ -23,9 +23,6 @@ function ProfileLayout({ match }) {
       <ProfileCard user={user} />
 
       <Switch>
-        {console.log(`${match.path}` === match.url)}
-        {console.log(`${match.path}`)}
-        {console.log(match)}
         <Route
           exact
           path={`${match.path}`}

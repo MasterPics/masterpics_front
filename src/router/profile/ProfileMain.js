@@ -20,7 +20,7 @@ function ProfileMain() {
     for (let i = 0; i < 20; i++) {
       JSXListItemData.push(
         <div className="grid-item">
-          <SimpleCard {...itemData[0]} />
+          <SimpleCard {...itemData[0]} key={i} />
         </div>
       );
     }
@@ -28,7 +28,7 @@ function ProfileMain() {
   }, []);
   const { refMasonry } = useMasonry(items, {
     fitWidth: true,
-    columnWidth: ".grid-item",
+    columnWidth: ".grid-sizer",
     itemSelector: ".grid-item",
     initLayout: true,
   });
@@ -36,13 +36,16 @@ function ProfileMain() {
   return (
     <div className="ProfileMain">
       <div>
-        <button>포트폴리오</button>
-        <button>게시글</button>
-        <button>촬영 일정</button>
-        <button>저장목록</button>
+        <button key={1}>포트폴리오</button>
+        <button key={2}>게시글</button>
+        <button key={3}>촬영 일정</button>
+        <button key={4}>저장목록</button>
       </div>
 
-      <div ref={refMasonry}>{items}</div>
+      <div ref={refMasonry}>
+        <div className="grid-sizer"></div>
+        {items}
+      </div>
     </div>
   );
 }

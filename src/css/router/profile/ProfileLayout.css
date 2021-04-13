@@ -3,8 +3,11 @@
   font-family: "NanumSquare", sans-serif;
   margin: 3% 4%;
   padding: 3% 4%;
-  display: grid;
-  grid-template-columns: 350px auto;
+  display: flex;
+}
+.ProfileLayout .ProfileCard {
+  width: 350px;
+  min-width: 350px;
 }
 
 /*# sourceMappingURL=ProfileLayout.css.map */
