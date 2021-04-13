@@ -3,9 +3,6 @@
   $grid-item-height: 225px;
   $grid-item-margin: 10px;
 
-  margin: 10px 0 10px 30px;
-  width: 100%;
-
   .grid-sizer {
     width: $grid-item-width + ($grid-item-margin * 2);
   }

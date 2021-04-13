@@ -1,12 +1,18 @@
 .ProfileLayout {
   border: #cecece 1px solid;
   font-family: "NanumSquare", sans-serif;
-  margin: 3% 4%;
+  width: 84%;
+  margin: 3% auto;
   padding: 3% 4%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 350px auto;
 
   .ProfileCard {
-    width: 350px;
-    min-width: 350px;
+    height: fit-content;
+  }
+
+  .content_container {
+    width: 95%;
+    margin: 0 0 0 5%;
   }
 }

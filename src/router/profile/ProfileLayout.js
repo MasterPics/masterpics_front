@@ -22,18 +22,20 @@ function ProfileLayout({ match }) {
     <div className="ProfileLayout">
       <ProfileCard user={user} />
 
-      <Switch>
-        <Route
-          exact
-          path={`${match.path}`}
-          render={() => <ProfileMain user={user} />}
-        />
-        <Route
-          exact
-          path={`${match.path}/edit`}
-          render={() => <ProfileEdit />}
-        />
-      </Switch>
+      <div className="content_container">
+        <Switch>
+          <Route
+            exact
+            path={`${match.path}`}
+            render={() => <ProfileMain user={user} />}
+          />
+          <Route
+            exact
+            path={`${match.path}/edit`}
+            render={() => <ProfileEdit />}
+          />
+        </Switch>
+      </div>
     </div>
   );
 }
