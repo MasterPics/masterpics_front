@@ -17,3 +17,11 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin roundedTag($width, $height, $background) {
+  @include centerFill($width);
+  height: $height;
+  font-size: $height * 0.63;
+  border-radius: $height / 2;
+  background-color: #e2e2e2;
+}

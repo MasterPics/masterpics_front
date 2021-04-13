@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "../Header.scss";
+
+.FilterList {
+  button {
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 5px 10px;
+    height: 40px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 9px;
+    margin-right: 10px;
+    outline: none;
+  }
+
+  .selected {
+    background-color: #373737;
+    color: white;
+    border: #373737 1px solid;
+  }
+
+  :not(.selected) {
+    background-color: #ffffff;
+    color: #000000;
+    border: #bfbfbf 1px solid;
+  }
+}

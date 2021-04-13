@@ -1,0 +1,53 @@
+@charset "UTF-8";
+.SimpleCard {
+  position: relative;
+  width: 190px;
+  height: 225px;
+  border-radius: 7px;
+  overflow: hidden;
+  background-color: black;
+}
+.SimpleCard:hover img {
+  filter: brightness(0.5);
+}
+.SimpleCard:hover .informations {
+  opacity: 1;
+}
+.SimpleCard img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.2s;
+}
+.SimpleCard .informations {
+  transition: 0.2s;
+  opacity: 0;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  bottom: 10%;
+  left: 5%;
+}
+.SimpleCard .informations .title {
+  color: white;
+  margin-bottom: 5px;
+}
+.SimpleCard .informations .meta_info {
+  text-align: start;
+}
+.SimpleCard .informations .meta_info > * {
+  color: white;
+  margin-right: 5px;
+}
+.SimpleCard .informations .meta_info .like::before {
+  content: "❤";
+}
+.SimpleCard .informations .meta_info .view::before {
+  content: "👁";
+}
+
+/*# sourceMappingURL=SimpleCard.css.map */

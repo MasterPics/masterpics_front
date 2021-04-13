@@ -1,40 +1,13 @@
-.ProfileMain .profile_container {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  padding-left: 1px;
-  margin-top: 8%;
+.ProfileMain .grid-sizer {
+  width: 210px;
 }
-.ProfileMain .profile_container .profile_image {
-  width: 150px;
-  height: 150px;
-  border-radius: 100px;
+.ProfileMain .grid-item {
+  width: 190px;
+  height: 225px;
+  margin: 10px;
 }
-.ProfileMain .profile_container .profile_info_container .profile_username,
-.ProfileMain .profile_container .profile_info_container .profile_email,
-.ProfileMain .profile_container .profile_info_container .profile_category,
-.ProfileMain .profile_container .profile_info_container .profile_desc {
-  display: grid;
-  grid-template-columns: 110px 1fr;
-  margin-right: 20px;
-  padding: 10px;
-}
-.ProfileMain .profile_container .profile_info_container .profile_username .profile_info,
-.ProfileMain .profile_container .profile_info_container .profile_email .profile_info,
-.ProfileMain .profile_container .profile_info_container .profile_category .profile_info,
-.ProfileMain .profile_container .profile_info_container .profile_desc .profile_info {
-  margin-right: 5%;
-  color: #878787;
-}
-.ProfileMain .profile_button {
-  display: flex;
-  justify-content: flex-end;
-  margin: auto 1px;
-  padding: 2px;
-}
-.ProfileMain .profile_button a {
-  border: 1px solid black;
-  padding: 5px;
-  margin: 5px;
+.ProfileMain .useMasonryRef {
+  width: 100%;
 }
 
 /*# sourceMappingURL=ProfileMain.css.map */

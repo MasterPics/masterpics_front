@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "../Header.scss";
+
+.ProfileCard {
+  @include centerFill(100%);
+  border: #848484 1px solid;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+
+  > * {
+    @include centerFill(80%);
+    flex-direction: column;
+  }
+
+  .img_name_category {
+    height: 200px;
+    img {
+      width: 100px;
+      border-radius: 50%;
+    }
+    .username {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    .category {
+      @include roundedTag(100px, 28px, #e2e2e2);
+    }
+  }
+
+  .user_contact {
+    margin-bottom: 20px;
+    & > div {
+      @include centerFill(100%);
+      justify-content: flex-start;
+      margin-bottom: 5px;
+
+      span {
+        &:first-child {
+          font-size: 18px;
+          margin-right: 14px;
+        }
+        &:last-child {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  button {
+    @include button(45%, 32px, #c4c4c4);
+    border-radius: 9px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .posts {
+    margin-bottom: 20px;
+
+    & > div {
+      @include centerFill(100%);
+      justify-content: space-between;
+      margin-bottom: 12px;
+
+      & > span {
+        font-size: 17px;
+
+        &:last-child {
+          &::after {
+            content: " 게시물";
+          }
+        }
+      }
+    }
+  }
+
+  .description {
+    width: 75%;
+    margin-bottom: 50px;
+  }
+}

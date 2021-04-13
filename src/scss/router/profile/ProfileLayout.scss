@@ -1,15 +1,19 @@
 .ProfileLayout {
+  border: #cecece 1px solid;
   font-family: "NanumSquare", sans-serif;
-  margin: 3% 4%;
-  text-decoration: none;
-  list-style-type: none;
+  width: 84%;
+  min-width: 900px;
+  margin: 3% auto;
+  padding: 3% 0 3% 4%;
+  display: grid;
+  grid-template-columns: 350px auto;
 
-  .tabs {
-    display: flex;
-    margin: auto 1px;
-    padding: 2px;
-    margin-top: 3%;
-    justify-content: center;
-    align-items: center;
+  .ProfileCard {
+    height: fit-content;
+  }
+
+  .content_container {
+    width: 90%;
+    margin: 0 5%;
   }
 }
