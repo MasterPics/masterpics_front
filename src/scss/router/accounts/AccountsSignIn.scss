@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Sans+KR:wght@700&display=swap");
-@import "../Header.scss";
+@import "../../Header.scss";
 
 .AccountsSignIn {
   @include centerFill(600px, column);
