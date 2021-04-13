@@ -1,15 +1,8 @@
 .ProfileLayout {
+  border: #cecece 1px solid;
   font-family: "NanumSquare", sans-serif;
   margin: 3% 4%;
-  text-decoration: none;
-  list-style-type: none;
-
-  .tabs {
-    display: flex;
-    margin: auto 1px;
-    padding: 2px;
-    margin-top: 3%;
-    justify-content: center;
-    align-items: center;
-  }
+  padding: 3% 4%;
+  display: grid;
+  grid-template-columns: 350px auto;
 }

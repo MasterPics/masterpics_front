@@ -2,7 +2,7 @@ import "../../css/router/profile/ProfileLayout.css";
 import ProfileCard from "../../module/ProfileCard";
 import ProfileMain from "./ProfileMain";
 import ProfileEdit from "./ProfileEdit";
-import { Route, Switch } from "react-router";
+import { Switch, Route } from "react-router-dom";
 
 function ProfileLayout({ match }) {
   const user = {
@@ -23,13 +23,19 @@ function ProfileLayout({ match }) {
       <ProfileCard user={user} />
 
       <Switch>
+        {console.log(`${match.path}` === match.url)}
+        {console.log(`${match.path}`)}
+        {console.log(match)}
         <Route
-          path={`${match.path}/:id`}
-          render={() => {
-            <ProfileMain user={user} />;
-          }}
+          exact
+          path={`${match.path}`}
+          render={() => <ProfileMain user={user} />}
         />
-        <Route path={`${match.path}/:id/edit/`} component={ProfileEdit} />
+        <Route
+          exact
+          path={`${match.path}/edit`}
+          render={() => <ProfileEdit />}
+        />
       </Switch>
     </div>
   );

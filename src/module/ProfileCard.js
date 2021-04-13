@@ -16,6 +16,7 @@ function ProfileCard({ user }) {
     <div className="ProfileCard">
       <div className="img_name_category">
         <img
+          alt="profile"
           src={
             profile_img ||
             "https://cdn.iconscout.com/icon/free/png-512/account-profile-avatar-man-circle-round-user-30452.png"
