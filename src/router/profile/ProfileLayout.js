@@ -1,9 +1,11 @@
 import "../../css/router/profile/ProfileLayout.css";
+import ProfileCard from "../../module/ProfileCard";
 import ProfileMain from "./ProfileMain";
-import HoverDropdown from "../../module/HoverDropdown";
+import ProfileEdit from "./ProfileEdit";
+import { Route, Switch } from "react-router";
 
-function ProfileLayout({ user }) {
-  user = {
+function ProfileLayout({ match }) {
+  const user = {
     is_valid: true,
     username: "Nagi",
     email: "demon0315@naver.com",
@@ -14,21 +16,12 @@ function ProfileLayout({ user }) {
 
   return (
     <div className="ProfileLayout">
-      <div className="tabs">
-        <HoverDropdown name="My Profile" />
-        <HoverDropdown
-          name="My Posts"
-          items={[{ name: "Contact" }, { name: "Portfolio" }]}
-        />
-        <HoverDropdown
-          name="My Saves"
-          items={[{ name: "Contact" }, { name: "Portfolio" }]}
-        />
-      </div>
+      <ProfileCard />
 
-      <div>
-        <ProfileMain />
-      </div>
+      <Switch>
+        <Route path={`${match.path}/:id`} component={ProfileMain} />
+        <Route path={`${match.path}/:id/edit/`} component={ProfileEdit} />
+      </Switch>
     </div>
   );
 }
