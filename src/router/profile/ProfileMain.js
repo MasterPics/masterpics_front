@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "../../css/router/profile/ProfileMain.css";
 import useMasonry from "../../hooks/useMasonry";
 import SimpleCard from "../../module/SimpleCard";
+import FilterList from "../../module/FilterList";
 
 const itemData = [
   {
@@ -33,14 +34,16 @@ function ProfileMain() {
     initLayout: true,
   });
 
+  const filters = [
+    { name: "포트폴리오" },
+    { name: "게시글" },
+    { name: "촬영 일정" },
+    { name: "저장 목록" },
+  ];
+
   return (
     <div className="ProfileMain">
-      <div>
-        <button key={1}>포트폴리오</button>
-        <button key={2}>게시글</button>
-        <button key={3}>촬영 일정</button>
-        <button key={4}>저장목록</button>
-      </div>
+      <FilterList filters={filters} />
 
       <div ref={refMasonry}>
         <div className="grid-sizer"></div>
