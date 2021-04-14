@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import "../css/module/NavProfile.css";
 
-function NavProfile({ isAuthenticated = false, redirect_field_value }) {
+/* global confirm */
+
+function NavProfile({ isAuthenticated = true }) {
   return (
-    <ul className="nav__profile">
+    <ul className="NavProfile">
       {isAuthenticated ? (
         <>
           <li>
@@ -14,7 +16,9 @@ function NavProfile({ isAuthenticated = false, redirect_field_value }) {
               className="here"
               type="submit"
               value="Log Out"
-              onClick="return confirm('Are you sure?');"
+              onClick={() => {
+                return window.confirm("Are you sure?");
+              }}
             ></input>
           </form>
 

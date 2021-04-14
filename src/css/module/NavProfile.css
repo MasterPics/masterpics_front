@@ -1,45 +1,27 @@
-.here {
+.NavProfile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.NavProfile li {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.NavProfile li i {
+  font-size: 20px;
+}
+.NavProfile .here {
   background: none;
   border: none;
   font-family: "NanumSquare", sans-serif;
   font-size: 16px;
 }
-
-.here:active {
+.NavProfile .here:active {
   cursor: pointer;
 }
-
-.here:focus {
+.NavProfile .here:focus {
   outline: 0;
 }
 
-.nav__profile {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav__profile li {
-  display: flex;
-  align-items: center;
-  padding: 0 10px;
-}
-
-.nav__profile .padding {
-  padding-right: 5px;
-}
-
-.nav__profile i {
-  font-size: 20px;
-}
-
-.nav__profile a:hover i {
-  color: purple;
-  cursor: pointer;
-}
-
-.nav__toggleBtn {
-  display: none;
-
-  font-size: 24px;
-}
+/*# sourceMappingURL=NavProfile.css.map */

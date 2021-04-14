@@ -3,7 +3,7 @@ import "../css/module/NavMenu.css";
 
 function NavMenu() {
   return (
-    <ul className="nav__menu">
+    <ul className="NavMenu">
       <li>
         <Link to="/contact/">Contact</Link>
       </li>

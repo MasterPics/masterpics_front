@@ -1,0 +1,30 @@
+.NavProfile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  li {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+
+    i {
+      font-size: 20px;
+    }
+  }
+
+  .here {
+    background: none;
+    border: none;
+    font-family: "NanumSquare", sans-serif;
+    font-size: 16px;
+
+    &:active {
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+}

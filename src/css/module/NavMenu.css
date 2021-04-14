@@ -1,15 +1,15 @@
-.nav__menu {
+.NavMenu {
   display: flex;
   padding-left: 20px;
 }
 
-.nav__menu li {
+.NavMenu li {
   display: flex;
   align-items: center;
   padding-right: 20px;
 }
 
-.nav__menu li a:hover {
+.NavMenu li a:hover {
   color: purple;
   cursor: pointer;
 }
