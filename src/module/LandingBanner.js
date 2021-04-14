@@ -121,7 +121,7 @@ function LandingBanner({ ver }) {
 
         const newXPos = -(width * 0.0007);
 
-        if (newXPos !== icosahedronXPos) {
+        if (Math.abs(newXPos - icosahedronXPos) > 0.05) {
           icosahedronXPos = icosahedron.position.x +=
             (newXPos - icosahedronXPos) * deltaTime;
           // icosahedronXPos = icosahedron.position.x;
