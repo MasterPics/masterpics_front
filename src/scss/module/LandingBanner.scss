@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+KR&family=Sarina&display=swap");
 @import "../Header.scss";
 
-.LandingBanner {
+.LandingBanner_1 {
   background-color: #0d0d0d;
   @include centerFill(100%);
   height: 100vh;
@@ -113,5 +113,103 @@
         }
       }
     }
+  }
+}
+
+.LandingBanner_2 {
+  background-color: #0d0d0d;
+  @include centerFill(100%);
+  height: 100vh;
+
+  .text_container {
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+    @include centerFill(100%);
+    flex-direction: column;
+
+    > * {
+      color: white;
+      font-family: "DM Serif Display", serif;
+    }
+
+    .logo {
+      font-size: 80px;
+      margin-bottom: 30px;
+    }
+    h5 {
+      font-style: italic;
+      font-size: 18px;
+      margin-bottom: 70px;
+    }
+    h3 {
+      font-family: "Noto Sans KR", sans-serif;
+      font-size: 19px;
+    }
+  }
+
+  .background_container {
+    position: absolute;
+    z-index: 0;
+    @include centerFill(100%);
+    height: 100vh;
+
+    .categories {
+      position: absolute;
+      width: 80%;
+      height: 80%;
+      $hover-zoom-scale: 1.1;
+
+      > div {
+        font-family: "Sarina", cursive;
+        color: white;
+        width: min-content;
+        position: absolute;
+      }
+
+      .photographer {
+        transform: rotate(-90deg) translateX(-50%);
+        transform-origin: 0%;
+        top: 50%;
+        left: 0;
+        transition: 0.5s;
+        &:hover {
+          transform: rotate(-90deg) translateX(-50%) scale($hover-zoom-scale);
+        }
+      }
+      .stylist {
+        bottom: 0;
+        left: 0;
+        transition: 0.5s;
+        &:hover {
+          transform: scale($hover-zoom-scale);
+        }
+      }
+      .model {
+        bottom: 0;
+        right: 0;
+        transition: 0.5s;
+        &:hover {
+          transform: scale($hover-zoom-scale);
+        }
+      }
+
+      .hair-makeup {
+        transform-origin: 100%;
+        transform: rotate(90deg) translateX(50%);
+        top: 50%;
+        right: 0;
+        transition: 0.5s;
+        &:hover {
+          transform: rotate(90deg) translateX(50%) scale($hover-zoom-scale);
+        }
+      }
+    }
+  }
+
+  #c {
+    width: 100%;
+    height: 100%;
+    display: block;
   }
 }

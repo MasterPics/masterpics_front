@@ -22,7 +22,9 @@ function Main() {
   });
   return (
     <div className="Main">
-      <LandingBanner />
+      <LandingBanner ver={1} />
+      <br />
+      <LandingBanner ver={2} />
       {/* <div className="hello">
         <div className="text_space">
           <h1>MasterPics'</h1>
