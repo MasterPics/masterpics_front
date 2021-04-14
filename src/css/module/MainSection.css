@@ -55,13 +55,14 @@
   color: #5200ff;
 }
 .MainSection .container .img_section {
-  width: 100%;
+  width: fit-content;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 100%;
   justify-content: space-around;
+  margin: 0 auto;
   padding: 50px;
 }
 .MainSection .container .img_section img {

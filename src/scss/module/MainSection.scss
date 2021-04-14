@@ -39,9 +39,10 @@
     }
 
     .img_section {
-      @include centerFill(100%);
+      @include centerFill(fit-content);
       height: 100%;
       justify-content: space-around;
+      margin: 0 auto;
       padding: 50px;
 
       img {
