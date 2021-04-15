@@ -1,4 +1,5 @@
 import "../css/module/ProfileCard.css";
+import ProfileImage from "../module/ProfileImage";
 
 function ProfileCard({ user }) {
   const {
@@ -15,13 +16,7 @@ function ProfileCard({ user }) {
   return (
     <div className="ProfileCard">
       <div className="img_name_category">
-        <img
-          alt="profile"
-          src={
-            profile_img ||
-            "https://cdn.iconscout.com/icon/free/png-512/account-profile-avatar-man-circle-round-user-30452.png"
-          }
-        />
+        <ProfileImage src={profile_img} radius={"100px"} />
         <div className="username">{username}</div>
         <div className="category">{category}</div>
       </div>

@@ -1,2 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap");
+@import "../../Header.scss";
+
 .ProfileEdit {
+  position: relative;
+  @include centerFill(100%);
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 0 70px;
+  height: 100%;
+  flex-direction: column;
+  border: 1px solid #848484;
+
+  .img_name_category {
+    @include centerFill(100%);
+
+    .img_container {
+      @include centerFill(200px);
+      flex-direction: column;
+
+      input {
+        display: none;
+      }
+    }
+
+    .name_category_container {
+      @include centerFill(100%);
+      padding: 20px;
+      align-items: flex-start;
+      flex-direction: column;
+
+      * {
+        width: 100%;
+      }
+
+      label {
+        margin-bottom: 5px;
+      }
+      input {
+        @include textInput(100%, 30px);
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .user_contact {
+    @include centerFill(100%);
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+
+    span {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .input_container {
+      width: 100%;
+      padding: 12px;
+      border-radius: 7px;
+      display: grid;
+      row-gap: 7px;
+      grid-template-columns: 200px auto;
+      align-items: baseline;
+      justify-items: start;
+      border: 1px solid #848484;
+
+      label {
+        font-family: "Roboto", sans-serif;
+        color: #757575;
+      }
+
+      input {
+        @include textInput(100%, 30px, rgba(0, 0, 0, 0));
+        background-color: #e9e9e9;
+      }
+    }
+  }
+
+  .description {
+    width: 100%;
+    margin-top: 20px;
+
+    span {
+      font-size: 20px;
+    }
+
+    textarea {
+      margin-top: 10px;
+      @include textInput(100%, 85px);
+      resize: none;
+    }
+  }
+
+  button[type="submit"] {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 15px;
+    position: absolute;
+    bottom: 20px;
+    right: 70px;
+    @include button(100px, 32px, #b8b8b8);
+    border-radius: 9px;
+  }
 }

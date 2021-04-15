@@ -12,6 +12,8 @@ function ProfileLayout({ match }) {
     category: "other use",
     phone: "010-2030-9131",
     instagram: "bagjiin471",
+    profile_img:
+      "https://images.unsplash.com/photo-1618308178796-f4dc0a03bab6?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     portfolio_count: 10,
     contact_count: 5,
     desc:
@@ -32,7 +34,7 @@ function ProfileLayout({ match }) {
           <Route
             exact
             path={`${match.path}/edit`}
-            render={() => <ProfileEdit />}
+            render={() => <ProfileEdit user={user} />}
           />
         </Switch>
       </div>

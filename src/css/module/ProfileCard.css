@@ -22,10 +22,6 @@
 .ProfileCard .img_name_category {
   height: 200px;
 }
-.ProfileCard .img_name_category img {
-  width: 100px;
-  border-radius: 50%;
-}
 .ProfileCard .img_name_category .username {
   margin-bottom: 10px;
   font-size: 18px;
