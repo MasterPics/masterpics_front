@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import "../css/module/NavProfile.css";
 
-/* global confirm */
-
 function NavProfile({ isAuthenticated = true }) {
   return (
     <ul className="NavProfile">

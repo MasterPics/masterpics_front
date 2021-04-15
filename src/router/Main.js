@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
 import "../css/router/Main.css";
-import useMasonry from "../hooks/useMasonry";
 import LandingBanner from "../module/LandingBanner";
 import MainSection from "../module/MainSection";
 
