@@ -17,7 +17,7 @@ const chatRoomList = [
     profile_img:
       "https://images.unsplash.com/photo-1618308178796-f4dc0a03bab6?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     last_timestamp: "16:30",
-    unread_message: 2,
+    unread_message: 0,
     preview_message: "헤어메이크업 모델 구인 보고 연락드..",
   },
   {
@@ -25,7 +25,31 @@ const chatRoomList = [
     profile_img:
       "https://images.unsplash.com/photo-1618308178796-f4dc0a03bab6?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     last_timestamp: "16:30",
+    unread_message: 58,
+    preview_message: "헤어메이크업 모델 구인 보고 연락드..",
+  },
+  {
+    name: "Si0",
+    profile_img:
+      "https://images.unsplash.com/photo-1618308178796-f4dc0a03bab6?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    last_timestamp: "16:30",
     unread_message: 2,
+    preview_message: "빈티지 컨셉 개인작업 팀원 구한다고..",
+  },
+  {
+    name: "Si0",
+    profile_img:
+      "https://images.unsplash.com/photo-1618308178796-f4dc0a03bab6?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    last_timestamp: "16:30",
+    unread_message: 0,
+    preview_message: "헤어메이크업 모델 구인 보고 연락드..",
+  },
+  {
+    name: "포이오이오",
+    profile_img:
+      "https://images.unsplash.com/photo-1618308178796-f4dc0a03bab6?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    last_timestamp: "16:30",
+    unread_message: 58,
     preview_message: "헤어메이크업 모델 구인 보고 연락드..",
   },
 ];
