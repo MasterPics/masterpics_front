@@ -1,7 +1,6 @@
 import "../../css/router/accounts/AccountsForget.css";
 
 function AccountsForget({ history }) {
-  console.log(history);
   return (
     <div className="AccountsForget">
       <div className="title">
