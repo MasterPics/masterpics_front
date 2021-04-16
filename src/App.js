@@ -8,6 +8,7 @@ import ContactMain from "./router/contact/ContactMain";
 import PortfolioMain from "./router/portfolio/PortfolioMain";
 import ProfileLayout from "./router/profile/ProfileLayout";
 import AccountsLayout from "./router/accounts/AccountsLayout";
+import ChatLayout from "./router/chat/ChatLayout";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/portfolio" component={PortfolioMain} />
           <Route path="/profile/:id" component={ProfileLayout} />
           <Route path="/accounts" component={AccountsLayout} />
+          <Route path="/chat" component={ChatLayout} />
         </Switch>
         <Route path="/">
           <Footer />
