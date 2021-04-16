@@ -1,0 +1,65 @@
+@import "../../Header.scss";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap");
+
+.AccountsChange {
+  @include centerFill(600px, column);
+  background-color: #ffffff;
+  border: #cacaca 1px solid;
+
+  > * {
+    @include centerFill(80%, column);
+    align-items: flex-start;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+
+  .title {
+    margin: 75px 0 60px 0;
+
+    h2 {
+      font-weight: 500;
+      font-size: 32px;
+      margin-bottom: 27px;
+    }
+    h4 {
+      font-weight: 400;
+      font-size: 16px;
+      color: #565656;
+    }
+  }
+
+  form {
+    margin-bottom: 60px;
+
+    > * {
+      @include centerFill(100%, column);
+    }
+    input {
+      width: 100%;
+      height: 45px;
+      border: #cacaca 1px solid;
+      border-radius: 3px;
+      margin-bottom: 10px;
+      padding: 10px;
+
+      ::placeholder {
+        font-size: 18px;
+      }
+    }
+    input:first-child {
+      margin-bottom: 30px;
+    }
+    button[type="submit"] {
+      @include button(100%, 50px, #c4c4c4);
+      font-family: "Noto Sans KR", sans-serif;
+      font-size: 17px;
+      color: white;
+      margin-top: 30px;
+      margin-bottom: 12px;
+    }
+    .cancel_btn {
+      @include button(100%, 50px, #ffffff, #cacaca);
+      font-family: "Noto Sans KR", sans-serif;
+      font-size: 17px;
+    }
+  }
+}
