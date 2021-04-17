@@ -1,3 +1,120 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+.ChatRoom {
+  font-family: "Noto Sans KR", sans-serif;
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 80px auto 60px;
+}
+.ChatRoom header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.ChatRoom header .left_container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.ChatRoom header .left_container .ProfileImage {
+  margin-right: 10px;
+}
+.ChatRoom header .left_container div {
+  display: flex;
+  height: 60%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.ChatRoom header .left_container div > * {
+  background-color: #c4c4c4;
+}
+.ChatRoom header .left_container div h5 {
+  width: max-content;
+}
+.ChatRoom header .left_container div div {
+  height: 7px;
+  width: 100px;
+}
+.ChatRoom header .right_container {
+  display: flex;
+}
+.ChatRoom header .right_container .button_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+.ChatRoom header .right_container .button_container button {
+  width: 40px;
+  height: 40px;
+  background-color: #c4c4c4;
+  border: #00000000 1px solid;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3px;
+}
+.ChatRoom .chattings {
+  background-color: #f2f2f2;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  overflow-y: auto;
+}
+.ChatRoom .chattings .chat_container {
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  margin-bottom: 10px;
+}
+.ChatRoom .chattings .chat_container .Chat {
+  grid-column: 1/2;
+}
+.ChatRoom .chattings .chat_container .Chat.reverse {
+  grid-column: 3/4;
+}
+.ChatRoom .input_container {
+  height: 60px;
+  border-top: 1px solid #cacaca;
+  padding: 10px 5%;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 40px auto 70px;
+  align-items: center;
+  justify-items: center;
+  background-color: #fff;
+}
+.ChatRoom .input_container button {
+  width: 100%;
+  height: 90%;
+  background-color: #c4c4c4;
+  border: #00000000 1px solid;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ChatRoom .input_container button i {
+  color: #ffffff;
+}
+.ChatRoom .input_container input {
+  border: 1px solid #cacaca;
+  border-radius: 7px;
+  width: 90%;
+  height: 90%;
+  padding: 5px;
+}
 
 /*# sourceMappingURL=ChatRoom.css.map */

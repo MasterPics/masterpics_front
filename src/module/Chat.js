@@ -1,7 +1,7 @@
 import "../css/module/Chat.css";
 import ProfileImage from "./ProfileImage";
 
-function Chat({ name, type, content, profile_img }) {
+function Chat({ author, type, content, profile_img, reverse, isHead }) {
   let contentJSX;
   if (type === "text") {
     contentJSX = <p>{content}</p>;
@@ -10,10 +10,13 @@ function Chat({ name, type, content, profile_img }) {
   }
 
   return (
-    <div className="Chat">
-      <ProfileImage src={profile_img} radius={"30px"} />
-      <div>
-        <h5>{name}</h5>
+    <div className={reverse ? "Chat reverse" : "Chat"}>
+      <div className="img_container">
+        {isHead ? <ProfileImage src={profile_img} radius={"40px"} /> : <></>}
+      </div>
+
+      <div className="name_content">
+        {isHead ? <h5>{author}</h5> : <></>}
         <div className="content_container">{contentJSX}</div>
       </div>
     </div>

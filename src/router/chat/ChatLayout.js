@@ -59,10 +59,12 @@ const chatRoom = {
     profile_img:
       "https://images.unsplash.com/photo-1618308178796-f4dc0a03bab6?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
     name: "포이오이오",
+    id: 2,
   },
   chats: [
     {
       author: "포이오이오",
+      authorId: 2,
       profile_img:
         "https://images.unsplash.com/photo-1618308178796-f4dc0a03bab6?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       type: "text",
@@ -70,6 +72,7 @@ const chatRoom = {
     },
     {
       author: "포이오이오",
+      authorId: 2,
       profile_img:
         "https://images.unsplash.com/photo-1618308178796-f4dc0a03bab6?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       type: "image",
@@ -78,6 +81,7 @@ const chatRoom = {
     },
     {
       author: "Si0",
+      authorId: 1,
       profile_img:
         "https://images.unsplash.com/photo-1618308178796-f4dc0a03bab6?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       type: "text",
@@ -86,6 +90,7 @@ const chatRoom = {
     },
     {
       author: "포이오이오",
+      authorId: 2,
       profile_img:
         "https://images.unsplash.com/photo-1618308178796-f4dc0a03bab6?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       type: "text",
@@ -95,6 +100,11 @@ const chatRoom = {
   ],
 };
 
+const user = {
+  id: 1,
+  name: "Si0",
+};
+
 function ChatLayout() {
   const [chatList, setChatList] = useState(chatRoomList);
   const [currentChatRoom, setCurrentChatRoom] = useState(chatRoom);
@@ -102,7 +112,7 @@ function ChatLayout() {
   return (
     <div className="ChatLayout">
       <ChatList chatList={chatList} />
-      <ChatRoom {...currentChatRoom} />
+      <ChatRoom {...currentChatRoom} user={user} />
     </div>
   );
 }

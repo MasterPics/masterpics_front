@@ -1,2 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import "../Header.scss";
+
 .ChatRoom {
+  $header-height: 80px;
+  $input_container-height: 60px;
+
+  font-family: "Noto Sans KR", sans-serif;
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: $header-height auto $input_container-height;
+
+  header {
+    @include centerFill(100%);
+    height: $header-height;
+    box-sizing: border-box;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+
+    .left_container {
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      .ProfileImage {
+        margin-right: 10px;
+      }
+
+      div {
+        display: flex;
+        height: 60%;
+        flex-direction: column;
+        justify-content: space-around;
+        & > * {
+          background-color: #c4c4c4;
+        }
+        h5 {
+          width: max-content;
+        }
+        div {
+          height: 7px;
+          width: 100px;
+        }
+      }
+    }
+
+    .right_container {
+      display: flex;
+
+      .button_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+
+        button {
+          $button_size: 40px;
+          @include button($button_size, $button_size, #c4c4c4);
+          margin-bottom: 3px;
+        }
+      }
+    }
+  }
+
+  .chattings {
+    background-color: #f2f2f2;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+
+    .chat_container {
+      display: grid;
+      grid-template-columns: 40% 20% 40%;
+      margin-bottom: 10px;
+
+      .Chat {
+        grid-column: 1 / 2;
+      }
+      .Chat.reverse {
+        grid-column: 3 / 4;
+      }
+    }
+  }
+
+  .input_container {
+    height: $input_container-height;
+    border-top: 1px solid #cacaca;
+    padding: 10px 5%;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 40px auto 70px;
+    align-items: center;
+    justify-items: center;
+    background-color: #fff;
+
+    button {
+      @include button(100%, 90%, #c4c4c4);
+
+      i {
+        color: #ffffff;
+      }
+    }
+
+    input {
+      @include textInput(90%, 90%, #cacaca);
+    }
+  }
 }
