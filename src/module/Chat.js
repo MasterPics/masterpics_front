@@ -6,7 +6,7 @@ function Chat({ author, type, content, profile_img, reverse, isHead }) {
   if (type === "text") {
     contentJSX = <p>{content}</p>;
   } else if (type === "image") {
-    contentJSX = <img src={content} />;
+    contentJSX = <img src={content} alt="content" />;
   }
 
   return (
