@@ -9,6 +9,7 @@ import ContactMain from "./router/contact/ContactMain";
 import PortfolioMain from "./router/portfolio/PortfolioMain";
 import ProfileLayout from "./router/profile/ProfileLayout";
 import AccountsLayout from "./router/accounts/AccountsLayout";
+import ChatLayout from "./router/chat/ChatLayout";
 
 function App() {
   return (
