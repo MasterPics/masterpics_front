@@ -10,7 +10,7 @@ import PortfolioMain from "./router/portfolio/PortfolioMain";
 import ProfileLayout from "./router/profile/ProfileLayout";
 import AccountsLayout from "./router/accounts/AccountsLayout";
 import ChatLayout from "./router/chat/ChatLayout";
-
+import ReferenceLayout from "./router/reference/ReferenceLayout";
 function App() {
   return (
     <div className="App">
@@ -25,6 +25,9 @@ function App() {
             <Route path="/portfolio" component={PortfolioMain} />
             <Route path="/profile/:id" component={ProfileLayout} />
             <Route path="/accounts" component={AccountsLayout} />
+            <Route path="/reference">
+              <ReferenceLayout />
+            </Route>
           </Switch>
           <Route path="/">
             <Footer />

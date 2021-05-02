@@ -1,0 +1,11 @@
+@import "../../Header.scss";
+
+.ReferenceLayout {
+  @include centerFill(100%, column);
+  align-items: center;
+
+  > * {
+    @include centerFill(100%, column);
+    align-items: center;
+  }
+}
