@@ -1,0 +1,38 @@
+.SearchForm {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+.SearchForm > * {
+  height: 100%;
+}
+.SearchForm input {
+  border: 1px solid #cacaca;
+  border-radius: 7px;
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+}
+.SearchForm button {
+  width: 40px;
+  height: 40px;
+  background-color: #5200ff;
+  border: #00000000 1px solid;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.SearchForm button i {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=SearchForm.css.map */

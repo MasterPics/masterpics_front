@@ -1,12 +1,23 @@
-/*category btn*/
-
-* {
+@charset "UTF-8";
+.SearchForm {
+  /*category btn*/
+  padding: 3%;
+  /* Dropdown Button */
+  /* The container <div> - needed to position the dropdown content */
+  /* Dropdown Content (Hidden by Default) */
+  /* Links inside the dropdown */
+  /* Change color of dropdown links on hover */
+  /* Show the dropdown menu on hover */
+  /* 무한스크롤 */
+  /* Portfolio List CSS */
+  /*top button*/
+}
+.SearchForm * {
   box-sizing: border-box;
   scroll-behavior: smooth;
   color: black;
 }
-
-.dropdown .btn {
+.SearchForm .dropdown .btn {
   width: 150px;
   height: 50px;
   border: 1px solid #333;
@@ -21,27 +32,23 @@
   z-index: 0;
   transition: 1s;
 }
-
-.dropdown .btn::before,
-.dropdown .btn::after {
+.SearchForm .dropdown .btn::before,
+.SearchForm .dropdown .btn::after {
   position: absolute;
   background: #fff;
   z-index: -1;
   transition: 1s;
   content: "";
 }
-
-.dropdown .btn::before {
+.SearchForm .dropdown .btn::before {
   height: 50px;
   width: 130px;
 }
-
-.dropdown .btn::after {
+.SearchForm .dropdown .btn::after {
   width: 150px;
   height: 30px;
 }
-
-.dropdown .noselect {
+.SearchForm .dropdown .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -49,43 +56,32 @@
   -ms-user-select: none;
   user-select: none;
 }
-
-.dropdown .btn:hover::before {
+.SearchForm .dropdown .btn:hover::before {
   width: 0px;
   background: #fff;
 }
-
-.dropdown .btn:hover::after {
+.SearchForm .dropdown .btn:hover::after {
   height: 0px;
   background: #fff;
 }
-
-.dropdown .btn:hover {
+.SearchForm .dropdown .btn:hover {
   background: #fff;
 }
-
-/* Dropdown Button */
-.dropbtn {
+.SearchForm .dropbtn {
   padding: 16px;
 }
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
+.SearchForm .dropdown {
   position: relative;
   display: inline-block;
 }
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+.SearchForm .dropdown-content {
   display: none;
   position: absolute;
   min-width: 160px;
   z-index: 1;
   margin-left: 11px;
 }
-
-/* Links inside the dropdown */
-.dropdown-content a {
+.SearchForm .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -93,27 +89,19 @@
   background-color: white;
   border: #ddd solid 1px;
 }
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
+.SearchForm .dropdown-content a:hover {
   background-color: #ddd;
 }
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.SearchForm .dropdown:hover .dropdown-content {
   display: block;
 }
-
-/* 무한스크롤 */
-
-.loading,
-.loading:after {
+.SearchForm .loading,
+.SearchForm .loading:after {
   border-radius: 50%;
   width: 2em;
   height: 2em;
 }
-
-.loading {
+.SearchForm .loading {
   display: none;
   margin: 60px auto;
   font-size: 10px;
@@ -122,78 +110,62 @@
   border-top: 0.3em solid rgba(160, 160, 160, 0.2);
   border-right: 0.3em solid rgba(160, 160, 160, 0.2);
   border-bottom: 0.3em solid rgba(160, 160, 160, 0.2);
-  border-left: 0.3em solid rgb(0, 0, 0);
+  border-left: 0.3em solid black;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-animation: load8 0.6s infinite linear;
   animation: load8 0.6s infinite linear;
 }
-
-.loading.show {
+.SearchForm .loading.show {
   opacity: 1;
 }
-
 @-webkit-keyframes load8 {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
-
 @keyframes load8 {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
-
-/* Portfolio List CSS */
-a {
+.SearchForm a {
   text-decoration: none;
   color: black;
 }
-
-.portfolio_list {
-  padding: 3%;
-}
-
-.portfolio_list .bar {
+.SearchForm .bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 3% 5%;
 }
-
-.bar .bar_left {
+.SearchForm .bar .bar_left {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.bar_right {
+.SearchForm .bar_right {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.bar .input-group {
+.SearchForm .bar .SearchForm {
   display: flex;
   margin-right: 5px;
   padding: 0;
 }
-
-.input-group .form-control.search {
+.SearchForm .SearchForm input {
   border: 0;
   padding: 5px;
   font-size: 1em;
@@ -202,50 +174,40 @@ a {
   margin-right: 10px;
   width: 300px;
 }
-
-.bar .btn_search {
+.SearchForm .bar .btn_search {
   padding: 6px;
   border: solid 1px #ccc;
   border-radius: 3px;
   margin-right: 20px;
 }
-
-.bar .sort {
+.SearchForm .bar .sort {
   margin-right: 10px;
 }
-
-.bar .sort select {
+.SearchForm .bar .sort select {
   border: 0;
   padding: 5px;
   border: solid 1px black;
   border-radius: 3px;
 }
-
-.bar .pay {
+.SearchForm .bar .pay {
   margin-right: 15px;
 }
-
-.useMasonryRef {
+.SearchForm .useMasonryRef {
   text-align: center;
   margin: 0 auto;
   transition: 0.3s width;
   min-height: max-content;
 }
-
-.grid-item > .item_container {
+.SearchForm .grid-item > .item_container {
   width: 340px;
   margin: 20px auto;
   /* transition: 0.3s; */
 }
-
-.grid-item:hover {
+.SearchForm .grid-item:hover {
   transition: 0.3s;
   transform: scale(1.03);
 }
-
-/*top button*/
-
-#myBtn {
+.SearchForm #myBtn {
   display: none;
   /* Hidden by default */
   position: fixed;
@@ -256,7 +218,7 @@ a {
   /* Place the button 30px from the right */
   z-index: 99;
   /* Make sure it does not overlap */
-  color: rgb(0, 0, 0);
+  color: black;
   /* Text color */
   cursor: pointer;
   /* Add a mouse pointer on hover */
@@ -265,16 +227,15 @@ a {
   border-radius: 100%;
   background-color: white;
 }
-
-#myBtn i:hover {
-  color: rgb(58, 58, 58);
+.SearchForm #myBtn i:hover {
+  color: #3a3a3a;
   /* Add a dark-grey background on hover */
 }
-
-.toright {
+.SearchForm .toright {
   display: flex;
 }
-
-.toright .eye {
+.SearchForm .toright .eye {
   margin-right: 10px;
 }
+
+/*# sourceMappingURL=PortfolioMain.css.map */
