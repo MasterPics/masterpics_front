@@ -11,13 +11,11 @@
 
 @import "../Header.scss";
 
-.page {
-  background-color: #ffffff;
+.RandomMagazine {
   @include centerFill(100%);
+  background-color: #ffffff;
   display: grid;
   grid-template-columns: 38% 24% 38%;
-  margin-top: 75px;
-  margin-bottom: 75px;
   align-items: flex-start;
   .part-1 {
     text-align: end;
