@@ -24,12 +24,30 @@
   font-weight: 700;
   margin-bottom: 16px;
 }
-.ReferenceLayout .FilterList {
+.ReferenceLayout .main_section {
+  align-items: flex-start;
+}
+.ReferenceLayout .main_section .FilterList {
   flex-direction: row;
   justify-content: flex-start;
 }
-.ReferenceLayout hr {
+.ReferenceLayout .main_section hr {
   margin: 20px 0;
+  width: 100%;
+}
+.ReferenceLayout .main_section .useMasonryRef .grid-sizer {
+  width: 25%;
+}
+.ReferenceLayout .main_section .useMasonryRef .card_container {
+  width: 25%;
+  min-width: 25%;
+}
+.ReferenceLayout .main_section .useMasonryRef .card_container .ReferenceCard {
+  width: 244px;
+  height: 318px;
+  min-width: 244px;
+  min-height: 318px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=ReferenceLayout.css.map */

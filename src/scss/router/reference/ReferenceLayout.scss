@@ -21,12 +21,35 @@
     }
   }
 
-  .FilterList {
-    flex-direction: row;
-    justify-content: flex-start;
-  }
+  .main_section {
+    align-items: flex-start;
 
-  hr {
-    margin: 20px 0;
+    .FilterList {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    hr {
+      margin: 20px 0;
+      width: 100%;
+    }
+
+    .useMasonryRef {
+      .grid-sizer {
+        width: 25%;
+      }
+      .card_container {
+        width: 25%;
+        min-width: 25%;
+
+        .ReferenceCard {
+          width: 244px;
+          height: 318px;
+          min-width: 244px;
+          min-height: 318px;
+          margin: 0 auto;
+        }
+      }
+    }
   }
 }

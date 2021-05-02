@@ -7,48 +7,65 @@ import useMasonry from "../../hooks/useMasonry";
 
 const references = [
   {
-    image:
+    img:
       "https://images.unsplash.com/photo-1607074462346-cf9420098347?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1321&q=80",
     title: "reference title multi line the limitation is two line",
-    like: 123,
-    view: 1623,
-    bookmarked: true,
+    meta: {
+      like: 123,
+      view: 1623,
+      bookmarked: true,
+    },
   },
   {
-    image:
+    img:
       "https://images.unsplash.com/photo-1607074462346-cf9420098347?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1321&q=80",
     title: "reference title multi line the limitation is two line",
-    like: 123,
-    view: 1623,
-    bookmarked: true,
+    meta: {
+      like: 123,
+      view: 1623,
+      bookmarked: true,
+    },
   },
   {
-    image:
+    img:
       "https://images.unsplash.com/photo-1607074462346-cf9420098347?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1321&q=80",
     title: "reference title multi line the limitation is two line",
-    like: 123,
-    view: 1623,
-    bookmarked: true,
+    meta: {
+      like: 123,
+      view: 1623,
+      bookmarked: true,
+    },
   },
   {
-    image:
+    img:
       "https://images.unsplash.com/photo-1607074462346-cf9420098347?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1321&q=80",
     title: "reference title multi line the limitation is two line",
-    like: 123,
-    view: 1623,
-    bookmarked: true,
+    meta: {
+      like: 123,
+      view: 1623,
+      bookmarked: true,
+    },
   },
 ];
 
 const filters = [{ name: "pinterest", default: true }, { name: "masterpics" }];
 
 function ReferenceLayout() {
-  const [referenceList, setReferenceList] = useState([references]);
+  const [referenceList, setReferenceList] = useState(references);
   const { refMasonry } = useMasonry(referenceList, {
-    fitWidth: true,
-    columnWidth: 360,
-    itemSelector: ".ReferenceCard",
-    initLayout: false,
+    fitWidth: false,
+    columnWidth: ".grid-sizer",
+    itemSelector: ".card_container",
+    initLayout: true,
+    percentPosition: true,
+  });
+
+  const cards = referenceList.map((reference, index) => {
+    return (
+      <div className="card_container">
+        <ReferenceCard {...reference} key={index} />
+      </div>
+    );
   });
 
   return (
@@ -63,14 +80,13 @@ function ReferenceLayout() {
         <SearchForm />
       </header>
 
-      <FilterList filters={filters} many={false} />
-
-      <hr />
-
-      <div className="main_section" ref={refMasonry}>
-        {referenceList.map((reference) => {
-          return <ReferenceCard {...reference} />;
-        })}
+      <div className="main_section">
+        <FilterList filters={filters} many={false} />
+        <hr />
+        <div ref={refMasonry}>
+          <div className="grid-sizer"></div>
+          {cards}
+        </div>
       </div>
     </div>
   );
