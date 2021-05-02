@@ -21,15 +21,15 @@ function MagazineCard({ img, title, user, meta, width, height }) {
 
         <div className="meta_container">
           <div className="like">
-            <i class="fas fa-heart"></i>
+            <i className="fas fa-heart"></i>
             {meta.like}
           </div>
           <div className="view">
-            <i class="fas fa-eye"></i>
+            <i className="fas fa-eye"></i>
             {meta.view}
           </div>
           <div className="bookmark">
-            <i class="fas fa-bookmark"></i>
+            <i className="fas fa-bookmark"></i>
             {meta.bookmark}
           </div>
         </div>
