@@ -16,12 +16,11 @@ function ReferenceLayout() {
         </span>
 
         <SearchForm />
-
-        <div className="filter_container">
-          <button></button>
-          <button></button>
-        </div>
       </header>
+      <div className="filter_container">
+        <button>pinterest</button>
+        <button>masterpics</button>
+      </div>
 
       <div className="main_section">
         {referenceList.map((reference) => {

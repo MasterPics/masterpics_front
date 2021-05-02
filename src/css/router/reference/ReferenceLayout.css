@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 .ReferenceLayout {
   width: 100%;
   display: flex;
@@ -5,14 +6,23 @@
   align-items: center;
   justify-content: center;
   align-items: center;
+  font-family: "Roboto", sans-serif;
 }
 .ReferenceLayout > * {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   align-items: center;
+}
+.ReferenceLayout header {
+  margin: 60px 0;
+}
+.ReferenceLayout header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
 }
 
 /*# sourceMappingURL=ReferenceLayout.css.map */
