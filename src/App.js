@@ -28,6 +28,9 @@ function App() {
             <Route path="/reference">
               <ReferenceLayout />
             </Route>
+            <Route path="/chat">
+              <ChatLayout />
+            </Route>
           </Switch>
           <Route path="/">
             <Footer />
