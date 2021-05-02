@@ -10,7 +10,7 @@ function SearchForm(props) {
       />
 
       <button className="btn btn-outline-secondary btn_search" type="button">
-        <i class="fas fa-search"></i>
+        <i className="fas fa-search"></i>
       </button>
     </div>
   );
