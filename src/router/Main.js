@@ -55,7 +55,15 @@ function Main() {
       {sections.map((section, index) => {
         return <MainSection {...section} reverse={index % 2 === 1} />;
       })}
+
       <RandomMagazine />
+      <div className="more">
+        <div>
+          View more <br />
+          MasterPic’s Artists
+        </div>
+        <i class="fas fa-arrow-circle-right"></i>
+      </div>
     </div>
   );
 }

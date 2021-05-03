@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@400;500&display=swap");
 
 .MagazineCard {
+  cursor: pointer;
   position: relative;
   font-family: "Roboto", sans-serif;
 
@@ -30,7 +31,7 @@
   .info_container {
     @include centerFill(100%, column);
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.4s;
     background-color: #00000066;
 
     * {
@@ -39,24 +40,42 @@
 
     .title {
       font-weight: 500;
-      font-size: 20px;
+      font-size: 16px;
+      margin-bottom: 10px;
     }
+
     .user_container {
       @include centerFill(50%, column);
+      margin-bottom: 20px;
+
       .username {
         font-weight: 400;
-        font-size: 16px;
+        font-size: 11px;
+        margin-bottom: 10px;
+
+        &::before {
+          content: "by. ";
+        }
       }
+
       .user_category {
+        @include roundedTag(65%, 20px, #797979);
         font-weight: 500;
-        font-size: 14px;
+        font-size: 9px;
       }
     }
+
     .meta_container {
       @include centerFill(50%);
       font-family: "Noto Sans", sans-serif;
-      font-size: 14px;
+      font-size: 9px;
       justify-content: space-between;
+
+      > * {
+        > i {
+          margin-right: 5px;
+        }
+      }
     }
   }
 }

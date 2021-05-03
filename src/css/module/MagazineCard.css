@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@400;500&display=swap");
 .MagazineCard {
+  cursor: pointer;
   position: relative;
   font-family: "Roboto", sans-serif;
 }
@@ -29,7 +30,7 @@
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.4s;
   background-color: #00000066;
 }
 .MagazineCard .info_container * {
@@ -37,7 +38,8 @@
 }
 .MagazineCard .info_container .title {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 .MagazineCard .info_container .user_container {
   width: 50%;
@@ -45,14 +47,28 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 }
 .MagazineCard .info_container .user_container .username {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+.MagazineCard .info_container .user_container .username::before {
+  content: "by. ";
 }
 .MagazineCard .info_container .user_container .user_category {
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  font-size: 12.6px;
+  border-radius: 10px;
+  background-color: #797979;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 9px;
 }
 .MagazineCard .info_container .meta_container {
   width: 50%;
@@ -61,8 +77,11 @@
   align-items: center;
   justify-content: center;
   font-family: "Noto Sans", sans-serif;
-  font-size: 14px;
+  font-size: 9px;
   justify-content: space-between;
+}
+.MagazineCard .info_container .meta_container > * > i {
+  margin-right: 5px;
 }
 
 /*# sourceMappingURL=MagazineCard.css.map */
