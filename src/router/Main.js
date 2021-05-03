@@ -1,6 +1,7 @@
 import "../css/router/Main.css";
 import LandingBanner from "../module/LandingBanner";
 import MainSection from "../module/MainSection";
+import RandomMagazine from "../module/RandomMagazine";
 
 const sections = [
   {
@@ -54,6 +55,7 @@ function Main() {
       {sections.map((section, index) => {
         return <MainSection {...section} reverse={index % 2 === 1} />;
       })}
+      <RandomMagazine />
     </div>
   );
 }
