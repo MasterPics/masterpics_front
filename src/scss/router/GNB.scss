@@ -18,13 +18,13 @@
   }
 
   .nav_left {
-    display: flex;
+    margin-left: 50px;
   }
+}
 
-  .nav__toggleBtn {
-    display: none;
-    font-size: 24px;
-  }
+#GNB.special {
+  background-color: #0d0d0d;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 820px) {
