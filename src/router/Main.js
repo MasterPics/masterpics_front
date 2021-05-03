@@ -1,6 +1,7 @@
 import "../css/router/Main.css";
 import LandingBanner from "../module/LandingBanner";
 import MainSection from "../module/MainSection";
+import RandomMagazine from "../module/RandomMagazine";
 
 const sections = [
   {
@@ -55,6 +56,15 @@ function Main() {
           <MainSection {...section} reverse={index % 2 === 1} key={index} />
         );
       })}
+
+      <RandomMagazine />
+      <div className="more">
+        <div>
+          View more <br />
+          MasterPic’s Artists
+        </div>
+        <i class="fas fa-arrow-circle-right"></i>
+      </div>
     </div>
   );
 }

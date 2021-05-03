@@ -18,12 +18,12 @@
   justify-content: center;
 }
 
-@mixin roundedTag($width, $height, $background) {
+@mixin roundedTag($width, $height, $background: #e2e2e2) {
   @include centerFill($width);
   height: $height;
   font-size: $height * 0.63;
   border-radius: $height / 2;
-  background-color: #e2e2e2;
+  background-color: $background;
 }
 
 @mixin textInput($width, $height, $borderColor: #939393) {
