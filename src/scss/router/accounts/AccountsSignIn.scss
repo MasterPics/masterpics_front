@@ -9,7 +9,7 @@
   }
 
   .logo {
-    font-size: 55px;
+    font-size: 32px;
     font-family: "DM Serif Display", serif;
     margin-bottom: 50px;
   }
@@ -24,7 +24,7 @@
     }
 
     button {
-      @include button(100%, 45px, #707070);
+      @include button(100%, 50px, #5200ff);
       margin-top: 10px;
       color: white;
     }
@@ -64,7 +64,7 @@
     h2 {
       font-family: "Noto Sans KR", sans-serif;
       font-weight: bold;
-      font-size: 26px;
+      font-size: 13px;
       margin: 24px 0;
     }
     .btns_container {
