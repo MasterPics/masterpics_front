@@ -2,18 +2,27 @@
 @import "../Header.scss";
 
 .FilterList {
+  height: 100%;
   display: flex;
+  align-items: center;
 
   .button_container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
     input {
       display: none;
     }
 
     label {
+      height: 100%;
+      display: flex;
+      align-items: center;
       font-family: "Roboto", sans-serif;
       font-size: 13px;
       font-weight: 400;
-      padding: 9px 19px;
+      padding: 0px 19px;
       height: 40px;
       box-sizing: content-box;
       cursor: pointer;

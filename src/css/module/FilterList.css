@@ -1,15 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .FilterList {
+  height: 100%;
   display: flex;
+  align-items: center;
+}
+.FilterList .button_container {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 .FilterList .button_container input {
   display: none;
 }
 .FilterList .button_container label {
+  height: 100%;
+  display: flex;
+  align-items: center;
   font-family: "Roboto", sans-serif;
   font-size: 13px;
   font-weight: 400;
-  padding: 9px 19px;
+  padding: 0px 19px;
   height: 40px;
   box-sizing: content-box;
   cursor: pointer;
