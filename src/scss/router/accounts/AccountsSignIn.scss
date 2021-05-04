@@ -24,7 +24,7 @@
     }
 
     button {
-      @include button(100%, 50px, #5200ff);
+      @include button(100%, 50px, $theme-purple);
       margin-top: 10px;
       color: white;
     }
