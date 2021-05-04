@@ -1,7 +1,8 @@
 import "../css/router/Main.css";
 import LandingBanner from "../module/LandingBanner";
 import MainSection from "../module/MainSection";
-import NavColorChange from "../module/NavColorChange";
+import React from "react";
+import useGNBColorChange from "../hooks/useGNBColorChange";
 
 const sections = [
   {
@@ -46,7 +47,7 @@ const sections = [
 ];
 
 function Main() {
-  window.addEventListener("scroll",NavColorChange);
+  useGNBColorChange();
   return (
     <div className="Main">
       <LandingBanner ver={1} />

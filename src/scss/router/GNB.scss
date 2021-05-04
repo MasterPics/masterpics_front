@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgb(54, 54, 54);
   padding: 15px 15px;
+  transition: 0.3s;
   position: sticky;
   /* Set the navbar to fixed position */
   top: 0;
@@ -22,9 +22,13 @@
   }
 }
 
-#GNB.special {
+#GNB.black {
   background-color: #0d0d0d;
   color: #ffffff;
+
+  * {
+    color: #ffffff;
+  }
 }
 
 @media screen and (max-width: 820px) {
