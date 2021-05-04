@@ -52,8 +52,7 @@ function Main() {
   return (
     <div className="Main">
       <LandingBanner ver={1} />
-      <br />
-      <LandingBanner ver={2} />
+      {/* <LandingBanner ver={2} /> */}
       {sections.map((section, index) => {
         return (
           <MainSection {...section} reverse={index % 2 === 1} key={index} />

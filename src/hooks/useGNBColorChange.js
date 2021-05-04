@@ -6,9 +6,9 @@ let GNB;
 const CLASS_NAME = "black";
 
 function NavColorChange() {
-  const scrollHeight = GNB.offsetTop;
+  const scrollTop = App.scrollTop;
   const baseHeight = window.innerHeight;
-  if (scrollHeight < baseHeight) {
+  if (scrollTop < baseHeight) {
     GNB.classList.add(CLASS_NAME);
   } else {
     GNB.classList.remove(CLASS_NAME);
