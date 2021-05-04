@@ -17,7 +17,7 @@ function NavMenu() {
         <Link to="/place/">Place</Link>
       </li>
       <li>
-        <Link to="/accounts/">Sign up/Login</Link>
+        <Link to="/accounts/signin/">Sign up/Login</Link>
       </li>
     </ul>
   );
