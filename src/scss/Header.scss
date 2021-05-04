@@ -1,3 +1,5 @@
+$theme-purple: #5200ff;
+
 @mixin centerFill($width, $direction: row) {
   width: $width;
   display: flex;
