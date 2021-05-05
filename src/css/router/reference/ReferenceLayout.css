@@ -24,5 +24,12 @@
   font-weight: 700;
   margin-bottom: 16px;
 }
+.ReferenceLayout .FilterList {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.ReferenceLayout hr {
+  margin: 20px 0;
+}
 
 /*# sourceMappingURL=ReferenceLayout.css.map */

@@ -20,4 +20,13 @@
       margin-bottom: 16px;
     }
   }
+
+  .FilterList {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  hr {
+    margin: 20px 0;
+  }
 }
