@@ -33,14 +33,21 @@
   opacity: 0;
   transition: 0.4s;
   background-color: #00000066;
+  position: relative;
 }
 .ReferenceCard .info_container * {
   color: #ffffff;
 }
 .ReferenceCard .info_container .title {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 10px;
+  width: 61%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 .ReferenceCard .info_container .user_container {
   width: 50%;
@@ -83,6 +90,12 @@
 }
 .ReferenceCard .info_container .meta_container > * > i {
   margin-right: 5px;
+}
+.ReferenceCard .info_container .bookmarked {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=ReferenceCard.css.map */

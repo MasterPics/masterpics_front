@@ -19,10 +19,14 @@ function ReferenceCard({ img, title, meta }) {
             <i className="fas fa-eye"></i>
             {meta.view}
           </div>
-          <div className="bookmark">
+        </div>
+
+        <div className="bookmarked">
+          {meta.bookmarked ? (
             <i className="fas fa-bookmark"></i>
-            {meta.bookmarked}
-          </div>
+          ) : (
+            <i className="far fa-bookmark"></i>
+          )}
         </div>
       </div>
     </div>
