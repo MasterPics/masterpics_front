@@ -1,4 +1,5 @@
 import "../css/router/Main.css";
+import AboutUs from "../module/AboutUs";
 import LandingBanner from "../module/LandingBanner";
 import MainSection from "../module/MainSection";
 import RandomMagazine from "../module/RandomMagazine";
@@ -53,6 +54,7 @@ function Main() {
     <div className="Main">
       <LandingBanner ver={1} />
       {/* <LandingBanner ver={2} /> */}
+      <AboutUs />
       {sections.map((section, index) => {
         return (
           <MainSection {...section} reverse={index % 2 === 1} key={index} />
