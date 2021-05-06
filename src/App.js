@@ -33,9 +33,7 @@ function App() {
               <ChatLayout />
             </Route>
           </Switch>
-          <Route path="/">
-            <Footer />
-          </Route>
+          <Route path="/">{/* <Footer /> */}</Route>
         </BrowserRouter>
       </ConstantsContext.Provider>
     </div>

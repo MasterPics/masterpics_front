@@ -13,14 +13,14 @@
   margin: 0px 30px;
 
   &:hover {
-    background-color: #8a2be2;
+    background-color: $theme-purple;
     transition: 0.2s;
     .container {
       color: white;
       .link {
         background-color: white;
-        color: #8a2be2;
-        border-color: #8a2be2;
+        color: $theme-purple;
+        border-color: $theme-purple;
       }
     }
   }

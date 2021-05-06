@@ -10,7 +10,7 @@
   margin: 0px 30px;
 }
 .AboutUsMainContent:hover {
-  background-color: #8a2be2;
+  background-color: #5200ff;
   transition: 0.2s;
 }
 .AboutUsMainContent:hover .container {
@@ -18,8 +18,8 @@
 }
 .AboutUsMainContent:hover .container .link {
   background-color: white;
-  color: #8a2be2;
-  border-color: #8a2be2;
+  color: #5200ff;
+  border-color: #5200ff;
 }
 .AboutUsMainContent .container {
   display: flex;
