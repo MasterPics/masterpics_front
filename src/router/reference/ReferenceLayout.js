@@ -2,9 +2,139 @@ import { useState } from "react";
 import "../../css/router/reference/ReferenceLayout.css";
 import SearchForm from "../../module/SearchForm";
 import ReferenceCard from "../../module/ReferenceCard";
+import FilterList from "../../module/FilterList";
+
+const references = [
+  {
+    img:
+      "https://images.unsplash.com/photo-1607074462346-cf9420098347?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1321&q=80",
+    title: "reference title multi line the limitation is two line",
+    meta: {
+      like: 123,
+      view: 1623,
+      bookmarked: false,
+    },
+  },
+  {
+    img:
+      "https://images.unsplash.com/photo-1607074462346-cf9420098347?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1321&q=80",
+    title: "reference title multi line the limitation is two line",
+    meta: {
+      like: 123,
+      view: 1623,
+      bookmarked: true,
+    },
+  },
+  {
+    img:
+      "https://images.unsplash.com/photo-1607074462346-cf9420098347?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1321&q=80",
+    title: "reference title multi line the limitation is two line",
+    meta: {
+      like: 123,
+      view: 1623,
+      bookmarked: true,
+    },
+  },
+  {
+    img:
+      "https://images.unsplash.com/photo-1607074462346-cf9420098347?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1321&q=80",
+    title: "reference title multi line the limitation is two line",
+    meta: {
+      like: 123,
+      view: 1623,
+      bookmarked: true,
+    },
+  },
+  {
+    img:
+      "https://images.unsplash.com/photo-1607074462346-cf9420098347?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1321&q=80",
+    title: "reference title multi line the limitation is two line",
+    meta: {
+      like: 123,
+      view: 1623,
+      bookmarked: true,
+    },
+  },
+  {
+    img:
+      "https://images.unsplash.com/photo-1607074462346-cf9420098347?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1321&q=80",
+    title: "reference title multi line the limitation is two line",
+    meta: {
+      like: 123,
+      view: 1623,
+      bookmarked: true,
+    },
+  },
+  {
+    img:
+      "https://images.unsplash.com/photo-1607074462346-cf9420098347?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1321&q=80",
+    title: "reference title multi line the limitation is two line",
+    meta: {
+      like: 123,
+      view: 1623,
+      bookmarked: true,
+    },
+  },
+  {
+    img:
+      "https://images.unsplash.com/photo-1607074462346-cf9420098347?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1321&q=80",
+    title: "reference title multi line the limitation is two line",
+    meta: {
+      like: 123,
+      view: 1623,
+      bookmarked: true,
+    },
+  },
+  {
+    img:
+      "https://images.unsplash.com/photo-1607074462346-cf9420098347?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1321&q=80",
+    title: "reference title multi line the limitation is two line",
+    meta: {
+      like: 123,
+      view: 1623,
+      bookmarked: true,
+    },
+  },
+  {
+    img:
+      "https://images.unsplash.com/photo-1607074462346-cf9420098347?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1321&q=80",
+    title: "reference title multi line the limitation is two line",
+    meta: {
+      like: 123,
+      view: 1623,
+      bookmarked: true,
+    },
+  },
+  {
+    img:
+      "https://images.unsplash.com/photo-1607074462346-cf9420098347?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1321&q=80",
+    title: "reference title multi line the limitation is two line",
+    meta: {
+      like: 123,
+      view: 1623,
+      bookmarked: true,
+    },
+  },
+  {
+    img:
+      "https://images.unsplash.com/photo-1607074462346-cf9420098347?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1321&q=80",
+    title: "reference title multi line the limitation is two line",
+    meta: {
+      like: 123,
+      view: 1623,
+      bookmarked: true,
+    },
+  },
+];
+
+const filters = [{ name: "pinterest", default: true }, { name: "masterpics" }];
 
 function ReferenceLayout() {
-  const [referenceList, setReferenceList] = useState([]);
+  const [referenceList, setReferenceList] = useState(references);
+
+  const cards = referenceList.map((reference, index) => {
+    return <ReferenceCard {...reference} key={index} />;
+  });
 
   return (
     <div className="ReferenceLayout">
@@ -17,15 +147,11 @@ function ReferenceLayout() {
 
         <SearchForm />
       </header>
-      <div className="filter_container">
-        <button>pinterest</button>
-        <button>masterpics</button>
-      </div>
 
       <div className="main_section">
-        {referenceList.map((reference) => {
-          <ReferenceCard {...reference} />;
-        })}
+        <FilterList filters={filters} many={false} />
+        <hr />
+        <div className="references_container">{cards}</div>
       </div>
     </div>
   );
