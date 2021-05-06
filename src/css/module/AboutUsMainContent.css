@@ -1,46 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-.circle {
+.AboutUsMainContent {
   width: 220px;
   height: 220px;
   border-radius: 50%;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 20px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
   display: flex;
   justify-content: center;
   background-color: white;
   margin: 0px 30px;
 }
-.circle:hover {
+.AboutUsMainContent:hover {
   background-color: #8a2be2;
   transition: 0.2s;
 }
-.circle:hover .main {
+.AboutUsMainContent:hover .container {
   color: white;
 }
-.circle:hover .main .link {
+.AboutUsMainContent:hover .container .link {
   background-color: white;
   color: #8a2be2;
   border-color: #8a2be2;
 }
-.circle .main {
+.AboutUsMainContent .container {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   text-align: center;
   line-height: 4;
-}
-.circle .main .main-work {
   font-family: "Roboto", sans-serif;
+}
+.AboutUsMainContent .container .title {
   font-size: 18px;
 }
-.circle .main .main-work-ex {
+.AboutUsMainContent .container .desc {
   width: 180px;
   height: 20px;
-  font-family: "Roboto", sans-serif;
   font-size: 12px;
   line-height: 1.5;
 }
-.circle .main .link {
+.AboutUsMainContent .container .link {
   width: 60px;
   height: 20px;
   background-color: #ffffff;
@@ -53,7 +52,6 @@
   border: none;
   margin-top: 40px;
   color: #aaaaaa;
-  font-family: "Roboto", sans-serif;
   font-size: 9px;
 }
 
