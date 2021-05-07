@@ -11,6 +11,7 @@ import ProfileLayout from "./router/profile/ProfileLayout";
 import AccountsLayout from "./router/accounts/AccountsLayout";
 import ChatLayout from "./router/chat/ChatLayout";
 import ReferenceLayout from "./router/reference/ReferenceLayout";
+import PlaceMain from "./router/place/PlaceMain";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             <Route path="/reference">
               <ReferenceLayout />
             </Route>
+            <Route path="/place" component={PlaceMain} />
             <Route path="/chat">
               <ChatLayout />
             </Route>
