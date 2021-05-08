@@ -1,7 +1,6 @@
 import "../css/router/Main.css";
 import AboutUs from "../module/AboutUs";
 import LandingBanner from "../module/LandingBanner";
-import MainSection from "../module/MainSection";
 import RandomMagazine from "../module/RandomMagazine";
 import React from "react";
 import useGNBColorChange from "../hooks/useGNBColorChange";
