@@ -20,7 +20,7 @@ function ProfileMain() {
     let JSXListItemData = [];
     for (let i = 0; i < 20; i++) {
       JSXListItemData.push(
-        <div className="grid-item">
+        <div className="grid-item" key={i}>
           <SimpleCard {...itemData[0]} key={i} />
         </div>
       );
@@ -35,7 +35,7 @@ function ProfileMain() {
   });
 
   const filters = [
-    { name: "포트폴리오" },
+    { name: "포트폴리오", default: true },
     { name: "게시글" },
     { name: "촬영 일정" },
     { name: "저장 목록" },
@@ -43,7 +43,7 @@ function ProfileMain() {
 
   return (
     <div className="ProfileMain">
-      <FilterList filters={filters} />
+      <FilterList filters={filters} many={false} />
 
       <div ref={refMasonry}>
         <div className="grid-sizer"></div>

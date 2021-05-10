@@ -12,6 +12,7 @@
   height: fit-content;
 }
 .ProfileLayout .content_container {
+  height: 90%;
   width: 90%;
   margin: 0 5%;
 }

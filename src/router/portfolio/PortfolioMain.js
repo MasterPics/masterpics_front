@@ -361,7 +361,7 @@ function PortfolioMain() {
   };
 
   return (
-    <div className="portfolio_list">
+    <div className="PortfolioMain">
       <div className="bar">
         <div className="bar_left">
           <HoverDropdown

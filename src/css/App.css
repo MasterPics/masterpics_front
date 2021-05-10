@@ -20,14 +20,6 @@ body,
   overflow-y: scroll;
 }
 
-nav {
-  background-color: #fff;
-}
-
-nav a {
-  color: black;
-}
-
 .content {
   display: block;
   margin: 0 auto;

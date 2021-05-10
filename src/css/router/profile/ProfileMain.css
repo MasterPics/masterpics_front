@@ -1,13 +1,24 @@
-.ProfileMain .grid-sizer {
-  width: 210px;
+.ProfileMain {
+  height: 100%;
+  width: 100%;
 }
-.ProfileMain .grid-item {
-  width: 190px;
-  height: 225px;
-  margin: 10px;
+.ProfileMain .FilterList {
+  margin-bottom: 20px;
+  height: 20px;
 }
 .ProfileMain .useMasonryRef {
   width: 100%;
+  height: 100%;
+  max-height: 65vh;
+  overflow-y: scroll;
+}
+.ProfileMain .useMasonryRef .grid-sizer {
+  width: 210px;
+}
+.ProfileMain .useMasonryRef .grid-item {
+  width: 190px;
+  height: 225px;
+  margin: 10px;
 }
 
 /*# sourceMappingURL=ProfileMain.css.map */

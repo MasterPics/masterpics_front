@@ -1,0 +1,28 @@
+@import "../Header.scss";
+
+.SearchForm {
+  $height: 40px;
+
+  @include centerFill(100%);
+  height: $height;
+  justify-content: space-between;
+  align-items: center;
+
+  > * {
+    height: 100%;
+  }
+
+  input {
+    @include textInput(100%, $height, #cacaca);
+  }
+
+  button {
+    @include button($height, $height, #5200ff);
+    margin-left: 10px;
+
+    i {
+      font-size: $height * 0.6;
+      color: #ffffff;
+    }
+  }
+}

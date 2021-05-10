@@ -2,22 +2,16 @@ import "../css/module/SearchForm.css";
 
 function SearchForm(props) {
   return (
-    <div className="input-group">
+    <div className="SearchForm">
       <input
         type="text"
         className="form-control search"
-        value=""
-        onChange={() => {}}
+        placeholder="검색어를 입력하세요."
       />
-      <div className="input-group-append">
-        <button
-          className="btn btn-outline-secondary btn_search"
-          type="button"
-          id=""
-        >
-          찾기
-        </button>
-      </div>
+
+      <button className="btn btn-outline-secondary btn_search" type="button">
+        <i className="fas fa-search"></i>
+      </button>
     </div>
   );
 }
