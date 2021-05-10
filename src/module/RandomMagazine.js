@@ -79,7 +79,7 @@ function RandomMagazine() {
     <div className="RandomMagazine">
       {cards.map((card, index) => {
         return (
-          <div className={`card_container-${index}`}>
+          <div className={`card_container-${index}`} key={index}>
             <MagazineCard key={index} {...card} />
           </div>
         );
