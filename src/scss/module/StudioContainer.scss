@@ -1,5 +1,107 @@
 .studio-container {
-    display:grid;
-    grid-template-columns: 3;
-    grid-template-rows: 5;
+  width: 600px;
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .studio-img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    img {
+      width: 300px;
+      height: 200px;
+      border-radius: 10px;
+    }
+  }
+  .studio-info {
+    width: 270px;
+    height: 200px;
+    margin-left: 20px;
+    .name-container {
+      height: 20px;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .name {
+        font-size: 14px;
+        font-weight: 700;
+        font-family: "Noto Sans KR", sans-serif;
+      }
+    }
+    .location-container {
+      margin-top: 10px;
+      height: 20px;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .location {
+        font-size: 14px;
+        font-weight: 400;
+        font-family: "Noto Sans KR", sans-serif;
+      }
+    }
+
+    .desc {
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: "Noto Sans KR", sans-serif;
+      color: #6b6b6b;
+    }
+  }
+  .user-meta {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    .user_container {
+      display: flex;
+      .user_profile {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #a6a6a6;
+      }
+      .user-info {
+        margin-left: 10px;
+        .username {
+          font-size: 10px;
+          font-weight: 400;
+          font-family: "Noto Sans KR", sans-serif;
+        }
+        .user_category {
+          font-size: 8px;
+          font-weight: 400;
+          font-family: "Noto Sans KR", sans-serif;
+          color: #a6a6a6;
+        }
+      }
+    }
+    .meta_container {
+      display: flex;
+      align-items: center;
+      .like {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+      }
+      .meta-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        border: none;
+        background-color: white;
+        cursor: pointer;
+        &:focus {
+          i {
+            background-color: #5200ff;
+          }
+        }
+      }
+    }
+  }
 }

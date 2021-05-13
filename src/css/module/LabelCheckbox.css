@@ -1,10 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 .pay {
   margin-right: 30px;
+  display: flex;
+  align-items: center;
 }
 .pay label {
+  margin-right: 5px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+}
+.pay [type=checkbox] {
+  width: 18px;
+  height: 18px;
+  border-radius: none;
 }
 
 /*# sourceMappingURL=LabelCheckbox.css.map */

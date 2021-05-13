@@ -2,8 +2,9 @@
 .PlaceMain {
   width: 100%;
   height: 100%;
+  margin: 0px, 50px;
 }
-.PlaceMain .container {
+.PlaceMain .top-container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -13,7 +14,7 @@
   width: 100%;
   background-color: black;
 }
-.PlaceMain .container::before {
+.PlaceMain .top-container::before {
   z-index: 0;
   content: "";
   display: block;
@@ -25,17 +26,17 @@
   background-position: center center;
   filter: brightness(60%);
 }
-.PlaceMain .container .content_wrapper {
+.PlaceMain .top-container .content_wrapper {
   position: relative;
   margin-left: 150px;
 }
-.PlaceMain .container .content_wrapper .title {
+.PlaceMain .top-container .content_wrapper .title {
   font-family: "Roboto", sans-serif;
   font-size: 25px;
   font-weight: 700;
   color: white;
 }
-.PlaceMain .container .content_wrapper .desc {
+.PlaceMain .top-container .content_wrapper .desc {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -44,7 +45,7 @@
   margin-bottom: 20px;
   line-height: 1.2;
 }
-.PlaceMain .container .content_wrapper .link {
+.PlaceMain .top-container .content_wrapper .link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,26 +59,34 @@
   font-size: 14px;
 }
 .PlaceMain .filter {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin: 0px auto;
   justify-content: space-between;
 }
 .PlaceMain .filter .checkbox {
-  margin-right: 130px;
   margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .PlaceMain .filter .checkbox .location {
-  margin-right: 50px;
+  display: flex;
+  align-content: center;
+  margin-right: 20px;
 }
 .PlaceMain .filter .checkbox .location label {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+}
+.PlaceMain .filter .checkbox .location [type=checkbox] {
+  width: 18px;
+  height: 18px;
+  border-radius: none;
+  margin-left: 5px;
 }
 .PlaceMain .line {
   width: 90%;
@@ -85,10 +94,65 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin: 0px auto;
   height: 1px;
   background-color: #9a9a9a;
   margin-top: 30px;
-  margin-left: 80px;
+}
+.PlaceMain .main-container {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+  height: 100%;
+}
+.PlaceMain .main-container .studios-container {
+  width: 1280px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  height: 1100px;
+}
+.PlaceMain .main-container .studios-container .studio {
+  position: relative;
+  width: 100%;
+  height: 1100px;
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
+  grid-template-rows: repeat(4, 220px);
+  align-items: center;
+  justify-items: center;
+  row-gap: 50px;
+  column-gap: 50px;
+  position: relative;
+}
+.PlaceMain .main-container .place-pagination {
+  width: 1280px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.PlaceMain .main-container .place-pagination ul {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.PlaceMain .main-container .place-pagination ul li {
+  margin: 0px 5px;
+}
+.PlaceMain .main-container .place-pagination ul li a {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  color: black;
 }
 
 /*# sourceMappingURL=PlaceMain.css.map */

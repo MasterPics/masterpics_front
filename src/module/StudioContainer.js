@@ -1,28 +1,40 @@
 import "../css/module/StudioContainer.css";
 
-function StudioContainer({img ,name, location, desc, hashtag, meta}) {
+function StudioContainer({img ,name, location, desc, hashtag, user, meta, width, height }) {
     return (
         <div className="studio-container">
             <div className="studio-img">
-                {img}
+                <img src={img} alt="studio image" />
             </div>
             <div className="studio-info">
-                <h2 className="name">{name}</h2>
-                <h3 className="location">{location}</h3>
+                <div className="name-container">
+                    <h2 className="name">{name}</h2>
+                </div>
+                <div className="location-container">
+                    <h3 className="location">{location}</h3>
+                </div>
                 <div className="desc">{desc}</div>
                 <div className="hashtag">{hashtag}</div>
-                <div className="meta_container">
-                    <div className="user">
+                <div className="user-meta">
+                    <div className="user_container">
                         <div className="user_profile"></div>
-                        <span className="username">{user.name}</span>
-                        <span className="user_category">{user.category}</span>
+                        <div className="user-info">
+                            <span className="username">{user.name}</span> <br/>
+                            <span className="user_category">{user.category}</span>
+                        </div>
                     </div>
-                    <div className="like">
-                        <i class="fas fa-heart"></i>
-                        {meta.like}
-                    </div>
-                    <div className="bookmark">
-                        <i class="fas fa-bookmark"></i>
+                    <div className="meta_container">
+                        <div className="like">
+                            <button type="button" className="like-btn meta-btn">
+                                <i class="far fa-heart fa-lg"></i>
+                            </button>
+                            {meta.like}
+                        </div>
+                        <div className="bookmark">
+                            <button type="button" className="bookmark-btn meta-btn">
+                                <i class="far fa-bookmark fa-lg"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -30,4 +42,4 @@ function StudioContainer({img ,name, location, desc, hashtag, meta}) {
     );
 }
 
-export default StudioInfo;
+export default StudioContainer;

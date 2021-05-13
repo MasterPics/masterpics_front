@@ -1,0 +1,106 @@
+.studio-container {
+  width: 600px;
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.studio-container .studio-img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+.studio-container .studio-img img {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
+.studio-container .studio-info {
+  width: 270px;
+  height: 200px;
+  margin-left: 20px;
+}
+.studio-container .studio-info .name-container {
+  height: 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.studio-container .studio-info .name-container .name {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.studio-container .studio-info .location-container {
+  margin-top: 10px;
+  height: 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.studio-container .studio-info .location-container .location {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.studio-container .studio-info .desc {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #6b6b6b;
+}
+.studio-container .user-meta {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.studio-container .user-meta .user_container {
+  display: flex;
+}
+.studio-container .user-meta .user_container .user_profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #a6a6a6;
+}
+.studio-container .user-meta .user_container .user-info {
+  margin-left: 10px;
+}
+.studio-container .user-meta .user_container .user-info .username {
+  font-size: 10px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.studio-container .user-meta .user_container .user-info .user_category {
+  font-size: 8px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #a6a6a6;
+}
+.studio-container .user-meta .meta_container {
+  display: flex;
+  align-items: center;
+}
+.studio-container .user-meta .meta_container .like {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.studio-container .user-meta .meta_container .meta-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.studio-container .user-meta .meta_container .meta-btn:focus i {
+  background-color: #5200ff;
+}
+
+/*# sourceMappingURL=StudioContainer.css.map */

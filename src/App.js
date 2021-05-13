@@ -3,7 +3,7 @@ import "./css/reset.css";
 import "./css/App.css";
 import { ConstantsContext, Constants } from "./context/ConstantContext";
 import GNB from "./router/GNB";
-// import Footer from "./router/Footer";
+import Footer from "./router/Footer";
 import Main from "./router/Main";
 import ContactMain from "./router/contact/ContactMain";
 import PortfolioMain from "./router/portfolio/PortfolioMain";
