@@ -1,0 +1,120 @@
+.StudioCard {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  width: 100%;
+  height: 100%;
+}
+.StudioCard .image_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.StudioCard .image_container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.StudioCard .studio-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+.StudioCard .studio-info > * {
+  width: 100%;
+}
+.StudioCard .studio-info .name-container {
+  height: 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.StudioCard .studio-info .name-container .name {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.StudioCard .studio-info .location-container {
+  margin-top: 10px;
+  height: 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.StudioCard .studio-info .location-container .location {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.StudioCard .studio-info .desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #6b6b6b;
+}
+.StudioCard .user-meta {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.StudioCard .user-meta .user_container {
+  display: flex;
+}
+.StudioCard .user-meta .user_container .user_profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #a6a6a6;
+}
+.StudioCard .user-meta .user_container .user-info {
+  margin-left: 10px;
+}
+.StudioCard .user-meta .user_container .user-info .username {
+  font-size: 10px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.StudioCard .user-meta .user_container .user-info .user_category {
+  font-size: 8px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #a6a6a6;
+}
+.StudioCard .user-meta .meta_container {
+  display: flex;
+  align-items: center;
+}
+.StudioCard .user-meta .meta_container .like {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.StudioCard .user-meta .meta_container .meta-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.StudioCard .user-meta .meta_container .meta-btn:focus i {
+  background-color: #5200ff;
+}
+
+/*# sourceMappingURL=StudioCard.css.map */

@@ -1,23 +1,30 @@
-.studio-container {
-  width: 600px;
-  height: 210px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .studio-img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
+@import "../Header.scss";
+
+.StudioCard {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  width: 100%;
+  height: 100%;
+
+  .image_container {
+    @include centerFill(100%);
+
     img {
-      width: 300px;
-      height: 200px;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
       border-radius: 10px;
     }
   }
   .studio-info {
-    width: 270px;
-    height: 200px;
+    @include centerFill(100%, column);
+    align-items: flex-start;
     margin-left: 20px;
+
+    > * {
+      width: 100%;
+    }
+
     .name-container {
       height: 20px;
       background-color: #f4f4f4;
@@ -45,6 +52,7 @@
     }
 
     .desc {
+      @include ellipsisLine(2);
       margin-top: 10px;
       font-size: 14px;
       font-weight: 400;
