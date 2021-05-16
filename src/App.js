@@ -30,7 +30,7 @@ function App() {
             <Route path="/reference">
               <ReferenceLayout />
             </Route>
-            <Route path="/place" component={PlaceMain} />
+            <Route path="/place" component={PlaceMain} exact />
             <Route path="/chat">
               <ChatLayout />
             </Route>
