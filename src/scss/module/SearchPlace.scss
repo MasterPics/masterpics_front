@@ -1,0 +1,28 @@
+@import "../Header.scss";
+
+.SearchPlace {
+  $height: 40px;
+  margin-top: 50px;
+  @include centerFill(50%);
+  height: $height;
+  justify-content: space-between;
+  align-items: center;
+
+  > * {
+    height: 100%;
+  }
+
+  input {
+    @include textInput(100%, $height, #cacaca);
+  }
+
+  button {
+    @include button($height, $height, #5200ff);
+    margin-left: 10px;
+    border-radius: 5px !important;
+    i {
+      font-size: $height * 0.6;
+      color: #ffffff;
+    }
+  }
+}

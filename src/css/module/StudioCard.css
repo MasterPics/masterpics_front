@@ -1,0 +1,154 @@
+.StudioCardTag {
+  width: max-content;
+  height: max-content;
+  background-color: #ffffff;
+  border: #5200ff 1px solid;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #5200ff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 8px;
+}
+.StudioCardTag::before {
+  content: "#";
+}
+
+.StudioCard {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  width: 100%;
+  height: 100%;
+}
+.StudioCard .image_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.StudioCard .image_wrapper img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.StudioCard .studio-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+.StudioCard .studio-info > * {
+  width: 100%;
+}
+.StudioCard .studio-info .name {
+  height: 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.StudioCard .studio-info .location {
+  margin-top: 10px;
+  height: 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.StudioCard .studio-info .desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #6b6b6b;
+  margin-bottom: 15px;
+}
+.StudioCard .studio-info .tags {
+  display: flex;
+}
+.StudioCard .studio-info .tags .StudioCardTag {
+  margin-right: 5px;
+}
+.StudioCard .studio-info .user {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.StudioCard .studio-info .user .user_container {
+  display: flex;
+}
+.StudioCard .studio-info .user .user_container .user_profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #a6a6a6;
+}
+.StudioCard .studio-info .user .user_container .user_info {
+  margin-left: 10px;
+}
+.StudioCard .studio-info .user .user_container .user_info .username {
+  font-size: 10px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.StudioCard .studio-info .user .user_container .user_info .user_category {
+  font-size: 8px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #a6a6a6;
+}
+.StudioCard .studio-info .user .meta_container {
+  display: flex;
+  align-items: center;
+}
+.StudioCard .studio-info .user .meta_container .like,
+.StudioCard .studio-info .user .meta_container .bookmark {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.StudioCard .studio-info .user .meta_container .like button,
+.StudioCard .studio-info .user .meta_container .bookmark button {
+  width: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.StudioCard .studio-info .user .meta_container .like button i,
+.StudioCard .studio-info .user .meta_container .bookmark button i {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.StudioCard .studio-info .user .meta_container .like button i.fas,
+.StudioCard .studio-info .user .meta_container .bookmark button i.fas {
+  color: #5200ff;
+}
+
+/*# sourceMappingURL=StudioCard.css.map */

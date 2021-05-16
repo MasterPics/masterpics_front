@@ -12,8 +12,9 @@ class ClickDropdown extends React.Component {
           <option value="recent" defaultValue>
             최신순
           </option>
-          <option value="save">저장순</option>
-          <option value="pay">가격순</option>
+          <option value="like">좋아요순</option>
+          <option value="low-pay">낮은 가격순</option>
+          <option value="high-pay">높은 가격순</option>
         </select>
       </div>
     );

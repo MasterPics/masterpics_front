@@ -1,0 +1,144 @@
+@import "../Header.scss";
+
+.StudioCardTag {
+  @include button(max-content, max-content, #ffffff, $theme-purple);
+  font-family: "Noto Sans KR", sans-serif;
+  color: $theme-purple;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 8px;
+
+  &::before {
+    content: "#";
+  }
+}
+
+.StudioCard {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  width: 100%;
+  height: 100%;
+
+  .image_wrapper {
+    @include centerFill(100%);
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  .studio-info {
+    @include centerFill(100%, column);
+    align-items: flex-start;
+    padding-left: 20px;
+
+    > * {
+      width: 100%;
+    }
+
+    .name {
+      height: 20px;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 700;
+      font-family: "Noto Sans KR", sans-serif;
+    }
+
+    .location {
+      margin-top: 10px;
+      height: 20px;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: "Noto Sans KR", sans-serif;
+    }
+
+    .desc {
+      @include ellipsisLine(2);
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: "Noto Sans KR", sans-serif;
+      color: #6b6b6b;
+      margin-bottom: 15px;
+    }
+
+    .tags {
+      display: flex;
+
+      .StudioCardTag {
+        margin-right: 5px;
+      }
+    }
+
+    .user {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      .user_container {
+        display: flex;
+
+        .user_profile {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: #a6a6a6;
+        }
+
+        .user_info {
+          margin-left: 10px;
+
+          .username {
+            font-size: 10px;
+            font-weight: 400;
+            font-family: "Noto Sans KR", sans-serif;
+          }
+
+          .user_category {
+            font-size: 8px;
+            font-weight: 400;
+            font-family: "Noto Sans KR", sans-serif;
+            color: #a6a6a6;
+          }
+        }
+      }
+
+      .meta_container {
+        display: flex;
+        align-items: center;
+
+        .like,
+        .bookmark {
+          display: flex;
+          align-items: center;
+          margin-left: 20px;
+
+          button {
+            @include centerFill(20px);
+            border: none;
+            background-color: white;
+            cursor: pointer;
+
+            i {
+              @include centerFill(100%);
+            }
+
+            i.fas {
+              color: $theme-purple;
+            }
+          }
+        }
+      }
+    }
+  }
+}
