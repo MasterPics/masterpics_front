@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .FilterList {
-  height: 100%;
   align-items: center;
 }
 .FilterList .filter_container {
@@ -38,16 +37,22 @@
   border: #5200ff 1px solid;
 }
 .FilterList .sub_category_container {
+  margin-top: 20px;
   display: flex;
-}
-.FilterList .sub_category_container .sub_category {
-  margin-right: 10px;
 }
 .FilterList .sub_category_container .sub_category input {
   display: none;
 }
+.FilterList .sub_category_container .sub_category label {
+  font-size: 13px;
+  ont-family: "Roboto", sans-serif;
+}
 .FilterList .sub_category_container .sub_category input:checked + label {
   color: #5200ff;
+}
+.FilterList .sub_category_container .sub_category + .sub_category::before {
+  margin: 0 15px;
+  content: "|";
 }
 
 /*# sourceMappingURL=FilterList.css.map */

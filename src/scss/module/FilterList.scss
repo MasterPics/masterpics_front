@@ -2,12 +2,11 @@
 @import '../Header.scss';
 
 .FilterList {
-	height: 100%;
 	align-items: center;
 
 	.filter_container {
 		display: flex;
-		
+
 		.button_container {
 			height: 100%;
 			display: flex;
@@ -43,20 +42,30 @@
 			}
 		}
 	}
-	
-	.sub_category_container{
-		display:flex;
-		
-		.sub_category{
-			margin-right: 10px;
-			
-			input{
+
+	.sub_category_container {
+		margin-top: 20px;
+		display: flex;
+
+		.sub_category {
+
+			input {
 				display: none;
 			}
 			
+			label{
+				font-size: 13px;
+				ont-family: 'Roboto', sans-serif;
+			}
+
 			input:checked + label {
 				color: $theme-purple;
 			}
+		}
+
+		.sub_category + .sub_category::before {
+			margin: 0 15px;
+			content: '|';
 		}
 	}
 }
