@@ -127,7 +127,7 @@ const references = [
   },
 ];
 
-const filters = [{ name: "pinterest", default: true }, { name: "masterpics" }];
+const filters = [{ name: "pinterest", default: true, subCategory:[] }];
 
 function ReferenceLayout() {
   const [referenceList, setReferenceList] = useState(references);

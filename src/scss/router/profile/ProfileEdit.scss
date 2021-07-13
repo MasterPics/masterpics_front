@@ -2,11 +2,10 @@
 @import "../../Header.scss";
 
 .ProfileEdit {
-  position: relative;
   @include centerFill(100%);
+  position: relative;
   font-family: "Noto Sans KR", sans-serif;
   padding: 0 70px;
-  height: 100%;
   flex-direction: column;
   border: 1px solid #848484;
 

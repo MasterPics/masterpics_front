@@ -1,7 +1,12 @@
+@import "../../Header.scss";
+
 .ProfileLayout {
+  @include centerFill(100%);
+	
   font-family: "NanumSquare", sans-serif;
-  width: 84%;
+  height: 100% - $GNB-height;
+  width: 100%;
   min-width: 900px;
-  margin: 3% auto;
-  padding: 3% 0 3% 4%;
+  margin: 0% auto;
+  // padding: 3% 4%;
 }

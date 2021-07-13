@@ -1,7 +1,8 @@
 .ProfileMain {
   height: 100%;
-  width: 100%;
+  width: 85%;
   padding: 3% 5%;
+  margin: 0 auto;
   display: grid;
   align-items: center;
   grid-template-columns: 350px auto;
@@ -9,9 +10,7 @@
 }
 .ProfileMain .ProfileCard {
   height: fit-content;
-}
-.ProfileMain .posts_area {
-  height: 100%;
+  margin: 3% 4%;
 }
 .ProfileMain .posts_area .FilterList {
   margin-bottom: 20px;

@@ -4,8 +4,9 @@
 	$grid-item-margin: 10px;
 
 	height: 100%;
-	width: 100%;
+	width: 85%;
 	padding: 3% 5%;
+	margin: 0 auto;
 	display: grid;
 	align-items: center;
 	grid-template-columns: 350px auto;
@@ -13,10 +14,11 @@
 
 	.ProfileCard {
 		height: fit-content;
+		margin: 3% 4%;
 	}
 
 	.posts_area {
-		height: 100%;
+		// height: 100%;
 
 		.FilterList {
 			margin-bottom: 20px;

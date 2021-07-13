@@ -1,14 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap");
 .ProfileEdit {
-  position: relative;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  position: relative;
   font-family: "Noto Sans KR", sans-serif;
   padding: 0 70px;
-  height: 100%;
   flex-direction: column;
   border: 1px solid #848484;
 }

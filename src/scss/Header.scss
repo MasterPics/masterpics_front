@@ -1,4 +1,6 @@
 $theme-purple: #5200ff;
+$GNB-padding: 15px;
+$GNB-height: 10%;
 
 @mixin centerFill($width, $direction: row) {
   width: $width;

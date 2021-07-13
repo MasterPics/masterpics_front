@@ -1,8 +1,12 @@
+@import "../Header.scss";
+
 #GNB {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 15px;
+  padding: $GNB-padding;
+	height: $GNB-height;
+	min-height: 60px;
   transition: 0.3s;
   position: sticky;
   /* Set the navbar to fixed position */
