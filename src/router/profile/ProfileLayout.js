@@ -1,5 +1,4 @@
 import "../../css/router/profile/ProfileLayout.css";
-import ProfileCard from "../../module/ProfileCard";
 import ProfileMain from "./ProfileMain";
 import ProfileEdit from "./ProfileEdit";
 import { Switch, Route } from "react-router-dom";
@@ -22,9 +21,6 @@ function ProfileLayout({ match }) {
 
   return (
     <div className="ProfileLayout">
-      <ProfileCard user={user} />
-
-      <div className="content_container">
         <Switch>
           <Route
             exact
@@ -37,7 +33,6 @@ function ProfileLayout({ match }) {
             render={() => <ProfileEdit user={user} />}
           />
         </Switch>
-      </div>
     </div>
   );
 }

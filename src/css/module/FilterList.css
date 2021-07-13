@@ -1,18 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .FilterList {
   height: 100%;
-  display: flex;
   align-items: center;
 }
-.FilterList .button_container {
+.FilterList .filter_container {
+  display: flex;
+}
+.FilterList .filter_container .button_container {
   height: 100%;
   display: flex;
   align-items: center;
 }
-.FilterList .button_container input {
+.FilterList .filter_container .button_container input {
   display: none;
 }
-.FilterList .button_container label {
+.FilterList .filter_container .button_container label {
   height: 100%;
   display: flex;
   align-items: center;
@@ -30,10 +32,22 @@
   color: #000000;
   border: #bfbfbf 1px solid;
 }
-.FilterList .button_container :checked + label {
+.FilterList .filter_container .button_container input:checked + label {
   background-color: #5200ff;
   color: white;
   border: #5200ff 1px solid;
+}
+.FilterList .sub_category_container {
+  display: flex;
+}
+.FilterList .sub_category_container .sub_category {
+  margin-right: 10px;
+}
+.FilterList .sub_category_container .sub_category input {
+  display: none;
+}
+.FilterList .sub_category_container .sub_category input:checked + label {
+  color: #5200ff;
 }
 
 /*# sourceMappingURL=FilterList.css.map */

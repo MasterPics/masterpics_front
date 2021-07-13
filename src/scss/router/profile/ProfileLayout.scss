@@ -5,16 +5,4 @@
   min-width: 900px;
   margin: 3% auto;
   padding: 3% 0 3% 4%;
-  display: grid;
-  grid-template-columns: 350px auto;
-
-  .ProfileCard {
-    height: fit-content;
-  }
-
-  .content_container {
-    height: 90%;
-    width: 90%;
-    margin: 0 5%;
-  }
 }
