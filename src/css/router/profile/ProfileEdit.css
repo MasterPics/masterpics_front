@@ -5,20 +5,39 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  height: 100%;
+}
+.ProfileEdit .background {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #f3f3f3;
+}
+.ProfileEdit .background form {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: 500px;
+  padding: 45px 60px;
+  background-color: #fff;
   position: relative;
   font-family: "Noto Sans KR", sans-serif;
-  padding: 0 70px;
   flex-direction: column;
   border: 1px solid #848484;
 }
-.ProfileEdit .img_name_category {
+.ProfileEdit .background form .img_name_category {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.ProfileEdit .img_name_category .img_container {
+.ProfileEdit .background form .img_name_category .img_container {
   width: 200px;
   display: flex;
   flex-direction: row;
@@ -26,10 +45,18 @@
   justify-content: center;
   flex-direction: column;
 }
-.ProfileEdit .img_name_category .img_container input {
+.ProfileEdit .background form .img_name_category .img_container label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.ProfileEdit .background form .img_name_category .img_container input {
   display: none;
 }
-.ProfileEdit .img_name_category .name_category_container {
+.ProfileEdit .background form .img_name_category .name_category_container {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -39,21 +66,23 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.ProfileEdit .img_name_category .name_category_container * {
+.ProfileEdit .background form .img_name_category .name_category_container div {
+  display: grid;
+  grid-template-columns: 110px auto;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.ProfileEdit .background form .img_name_category .name_category_container * {
   width: 100%;
 }
-.ProfileEdit .img_name_category .name_category_container label {
-  margin-bottom: 5px;
-}
-.ProfileEdit .img_name_category .name_category_container input {
+.ProfileEdit .background form .img_name_category .name_category_container input {
   border: 1px solid #939393;
   border-radius: 7px;
   width: 100%;
   height: 30px;
   padding: 5px;
-  margin-bottom: 20px;
 }
-.ProfileEdit .user_contact {
+.ProfileEdit .background form .user_contact {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -63,26 +92,26 @@
   align-items: flex-start;
   margin-top: 20px;
 }
-.ProfileEdit .user_contact span {
+.ProfileEdit .background form .user_contact span {
   font-size: 20px;
   margin-bottom: 10px;
 }
-.ProfileEdit .user_contact .input_container {
+.ProfileEdit .background form .user_contact .input_container {
   width: 100%;
   padding: 12px;
   border-radius: 7px;
   display: grid;
   row-gap: 7px;
-  grid-template-columns: 200px auto;
+  grid-template-columns: 100px auto 60px;
   align-items: baseline;
   justify-items: start;
   border: 1px solid #848484;
 }
-.ProfileEdit .user_contact .input_container label {
+.ProfileEdit .background form .user_contact .input_container label {
   font-family: "Roboto", sans-serif;
   color: #757575;
 }
-.ProfileEdit .user_contact .input_container input {
+.ProfileEdit .background form .user_contact .input_container > input {
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 7px;
   width: 100%;
@@ -90,14 +119,20 @@
   padding: 5px;
   background-color: #e9e9e9;
 }
-.ProfileEdit .description {
+.ProfileEdit .background form .user_contact .input_container .public_checkbox_container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.ProfileEdit .background form .description {
   width: 100%;
   margin-top: 20px;
+  margin-bottom: 35px;
 }
-.ProfileEdit .description span {
+.ProfileEdit .background form .description span {
   font-size: 20px;
 }
-.ProfileEdit .description textarea {
+.ProfileEdit .background form .description textarea {
   margin-top: 10px;
   border: 1px solid #939393;
   border-radius: 7px;
@@ -106,21 +141,19 @@
   padding: 5px;
   resize: none;
 }
-.ProfileEdit button[type=submit] {
+.ProfileEdit .background form button[type=submit] {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 15px;
-  position: absolute;
-  bottom: 20px;
-  right: 70px;
-  width: 100px;
-  height: 32px;
-  background-color: #b8b8b8;
-  border: #00000000 1px solid;
+  width: 149px;
+  height: 43px;
+  background-color: #ffffff;
+  border: #5200ff 1px solid;
   border-radius: 3px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #5200ff;
   border-radius: 9px;
 }
 
